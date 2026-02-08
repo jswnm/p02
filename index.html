@@ -1,0 +1,984 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" >
+    <title>P01 - Style Guide Template</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/font.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <h1>P01 - Style Guide Template</h1>
+
+      <p>
+        A template you can use to start building out your own style guides with.
+      </p>
+
+      <nav>
+        <a href="#interactive_elements">Interactive Elements</a>
+        <a href="#text_elements">Text Elements</a>
+        <a href="#combined_elements">Combined Elements</a>
+        <a href="product.html">Product Listing Template</a>
+        <a href="checkout.html">Checkout Template</a>
+        <a href="#citations">Citations</a>
+      </nav>
+    </header>
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+      <section class="element">
+        <h3>In-text link</h3>
+        <!--In-text link example, I just wanted to learn more how I could utilize the in-text link in different way and found nav bar-->
+        <p>
+          You can view <a href="menu.html">our menu</a> for today's offering.
+        </p>
+
+        <h4>HTML:</h4>
+        <code>
+          &lt;p&gt;You can view &gt;a href="menu.html"&gt;our menu&gt;/a&gt; for
+          today's offering.&gt;/p&gt;
+        </code>
+
+        <h4>CSS:</h4>
+        <code>
+          a { <br>
+          color:#A62C2C; <br>
+          } <br>
+
+          a:hover, a:focus{ <br>
+          color: #003A6B; <br>
+          text-decoration: none; <br>
+          }
+        </code>
+      </section>
+
+      <!-- Default Button styling section -->
+      <section class="element">
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#">Default Button</a> <br>
+      </section>
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+        <button class="btn">Submit</button>
+        <button class="btn">Reset</button>
+
+        <h4>HTML:</h4>
+        <code>
+          &lt;button&gt;Submit&lt;/button&gt; <br>
+          &lt;button&gt;Reset&lt;/button&gt;
+        </code>
+
+        <h4>CSS:</h4>
+        <code>
+          .btn { font-family: 'NeueMontreal';  <br>
+            font-weight: normal;  <br>
+            font-size: large;  <br>
+            margin: 100px;  <br>
+            padding: 15px 45px;  <br>
+            border: 3px solid #A62C2C; <br>
+            background: none;  <br>
+            outline: none;  <br>
+            color: #A62C2C;  <br>
+            position: relative; <br>
+            z-index: 0;  <br>
+            border-radius: 12px;  <br>
+            transition: transform 0.3s ease;  <br>
+          } <br>
+          .btn:hover {  <br>
+            transform: scale(1.05);  <br>
+            background-color: #FAF2E6;  <br>
+          }
+        </code>
+      </section>
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+        <div class="container">
+          <div class="form-box">
+            <h1 class="order-detail">Order Details</h1>
+            <form>
+              <label for="form-customer">Name:</label>
+              <input
+                type="text"
+                id="form-customer"
+                class="form-input"
+                placeholder="type your name here"
+              />
+              <br>
+
+              <label for="form-phone-number">Phone Number:</label>
+              <input
+                type="text"
+                id="form-phone-number"
+                class="form-input"
+                placeholder="type your phone number here"
+              />
+            </form>
+          </div>
+        </div>
+
+        <h4>HTML:</h4>
+        <code>
+          &lt;div class="container"&gt; <br>
+          &lt;div class="form-box"&gt; <br>
+            &lt;h1 class="order-detail"&gt;Order Details&lt;/h1&gt; <br>
+            &lt;form&gt; <br>
+              &lt;label for="form-customer"&gt;Name:&lt;/label&gt; <br>
+              &lt;input
+                type="text"
+                id="form-customer"
+                class="form-input"
+                placeholder="type your name here"
+              /&gt;
+              <br>
+
+              &lt;label for="form-phone-number"&gt;Phone Number:&lt;/label&gt; <br>
+              &lt;input
+                type="text"
+                id="form-phone-number"
+                class="form-input"
+                placeholder="type your phone number here"
+              /&gt; <br>
+            &lt;/form&gt; <br>
+          &lt;/div&gt; <br>
+        &lt;/div&gt; <br>
+        </code>
+
+        <h4>CSS:</h4>
+        <code>.order-detail { <br>
+  color:#A62C2C; <br>
+  font-family: 'NeueMontreal'; <br>
+  font-weight: bold; <br>
+} <br>
+
+.form-box{ <br>
+  min-width: 500px; <br>
+  margin: 0 auto; <br>
+} <br>
+
+.container { <br>
+  max-width: 500px; <br>
+  margin: 0 auto; <br>
+  padding: 5%; <br>
+} <br>
+
+form { <br>
+  max-width: none;<br>
+  margin: 0 auto; <br>
+  text-align: left; <br>
+  padding: 20px 0; <br>
+
+} <br>
+
+label { <br>
+  font-family: 'NeueMontreal'; <br>
+  font-weight: bold; <br>
+  color:#A62C2C; <br>
+  margin-bottom: 5rem; <br>
+}<br>
+
+input { <br>
+  font-family: 'Simplon Mono'; <br>
+}
+
+input{ <br>
+  display: block; <br>
+  margin: 0 auto; <br>
+  width: 100%; <br>
+  background: transparent; <br>
+  border: 0; <br>
+  border-bottom: 2px solid #A62C2C; <br>
+  outline: none; <br>
+} <br>
+ </code>
+      </section>
+
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+        <div class="container">
+          <div class="form-box">
+            <h1 class="meal-option">Select Your Meal Options</h1>
+            <label>
+              <input type="radio" id="4pc" name="chicken" value="4" />
+              <span>4PC CHICKEN</span>
+            </label>
+            <label>
+              <input type="radio" id="8pc" name="chicken" value="8" />
+              <span>8PC CHICKEN</span>
+            </label>
+            <label>
+              <input type="radio" id="12pc" name="chicken" value="12" />
+              <span>12PC CHICKEN</span>
+            </label>
+          </div>
+        </div>
+
+        <h4>HTML:</h4>
+        <code>
+          &lt;div class="container"&gt; <br>
+          &lt;div class="form-box"&gt; <br>
+          &lt;h1 class="meal-option"&gt;Select Your Meal Options&lt;/h1&gt;
+          <br>
+          &lt;label&gt; <br>
+          &lt;input type="radio" id="4pc" name="chicken" value="4"&gt; <br>
+          &lt;span&gt;4PC CHICKEN&lt;/span&gt; <br>
+          &lt;/label&gt; <br>
+          &lt;label&gt; <br>
+          &lt;input type="radio" id="8pc" name="chicken" value="8"&gt; <br>
+          &lt;span&gt;8PC CHICKEN&lt;/span&gt; <br>
+          &lt;/label&gt; <br>
+          &lt;label&gt; <br>
+          &lt;input type="radio" id="12pc" name="chicken" value="12"&gt; <br>
+          &lt;span&gt;12PC CHICKEN&lt;/span&gt; <br />
+          &lt;/label&gt; <br>
+          &lt;/div&gt; <br>
+          &lt;/div&gt; <br>
+        </code>
+        <h4>CSS:</h4>
+        <code>
+          *:after,
+*:before{ <br>
+  box-sizing: border-box; <br>
+} <br>
+
+.meal-option { <br>
+  margin-left: 10px; <br>
+  font-family: 'NeueMontreal'; <br>
+  font-weight: bold; <br>
+  color:#A62C2C <br>
+} <br>
+
+.container{ <br>
+  height: 200px; <br>
+  display: flex; <br>
+  align-items: center; <br>
+  justify-content: center; <br>
+} <br>
+
+input[type="radio"]{ <br>
+  display: none; <br>
+} <br>
+ 
+label{ <br>
+  display: block; <br>
+  cursor: pointer; <br>
+  font-weight: normal; <br>
+  margin-bottom: 10px; <br>
+} <br>
+
+label span{ <br>
+  display: inline-flex; <br>
+  align-items: center; <br>
+  padding: 10px 20px 10px 10px; <br>
+  border-radius: 25px; <br>
+  transition: .25s ease; <br>
+} <br>
+
+label span:hover,
+input[type="radio"]:checked + span{ <br>
+  background-color: #FAF2E6; <br>
+} <br>
+
+label span:before{ <br>
+  content: ""; <br>
+  background-color: #fff; <br>
+  width: 20px; <br>
+  height: 20px; <br>
+  border-radius: 25%; <br>
+  margin-right: 10px; <br>
+  transition: .25s ease; <br>
+  box-shadow:  inset 0 0 0 2px #A62C2C; <br>
+} <br>
+
+input[type="radio"]:checked + span:before{ <br>
+  box-shadow: inset 0 0 0 10px #A62C2C; <br>
+} <br>
+
+        </code>
+      </section>
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+        <a
+          href="https://www.facebook.com/pages/L-A-Chicken-Richmond/138005769549346"
+        >
+          <img
+            src="img/chicken_leg.jpg"
+            class="hero-img"
+            alt="picture of a plate of fried chicken legs close up shot"
+          >
+        </a>
+
+        <h4>HTML:</h4>
+        <code>
+          &lt;a
+          href="https://www.facebook.com/pages/L-A-Chicken-Richmond/138005769549346"&gt;
+          <br >
+          &lt;img src="img/chicken_leg.jpg" class="hero-img" alt="picture of a
+          plate of fried chicken legs close up shot"&gt; <br >
+          &lt;/a&gt;
+        </code>
+
+        <h4>CSS:</h4>
+        <code>
+          .hero-img { <br >
+          max-width: 500px; <br >
+          height: auto; <br >
+          transition: 0.3s ease; <br >
+          } <br >
+
+          .hero-img:hover { <br>
+          transform: scale(1.05); <br >
+          } <br />
+
+          .hero-img:active { <br >
+          border: 10px solid#003A6B; <br >
+          }
+        </code>
+      </section>
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <!--used a class here for h3 example so it doesnt clash with the existing css for h3-->
+      <section class="element">
+        <h3>Headings</h3>
+        <h1 class="example">Heading 1</h1>
+        <h2 class="example">Heading 2</h2>
+        <h3 class="example">Heading 3</h3>
+        <h4 class="example">Heading 4</h4>
+
+        <h4>HTML:</h4>
+        <code>
+          &lt;h1 class="example"&gt;Heading 1&lt;/h1&gt; <br >
+          &lt;h2 class="example"&gt;Heading 2&lt;/h2&gt; <br >
+          &lt;h3 class="example"&gt;Heading 3&lt;/h3&gt; <br >
+          &lt;h4 class="example"&gt;Heading 4&lt;/h4&gt; <br >
+        </code>
+        <h4>CSS:</h4>
+        <code>
+          .example {  <br >
+  font-style: normal; <br >
+  color:#A62C2C; <br />
+}
+        </code>
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+        <!--Pulled this paragraph from a news article that reports the opening of this cafe prunus near my house-->
+        <p>
+          Modest fast-food joint focusing on fried chicken & classic sides like
+          mashed potatoes & coleslaw.
+        </p>
+
+        <h4>HTML:</h4>
+        <code>
+          &lt;p&gt;Modest fast-food joint focusing on fried chicken & classic
+          sides like mashed potatoes & coleslaw.&lt;/p&gt;
+        </code>
+        <h4>CSS:</h4>
+        <code>
+          p { <br>
+  font-family: 'Simplon Mono'; <br >
+  font-style: normal; <br >
+  margin-top: 0; <br >
+  line-height: 2; <br >
+  max-width: 40rem;  <br >
+  color:#A62C2C; <br >
+}
+        </code>
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+        <ol>
+          <li>10 peice chicken</li>
+          <li>12 peice chicken</li>
+          <li>15 peice chicken</li>
+          <li>20 peice chicken</li>
+        </ol>
+
+        <h4>HTML:</h4>
+        <code>
+          &lt;ol&gt; <br >
+          &lt;li&gt;10 peice chicken&lt;/li&gt; <br >
+          &lt;li&gt;12 peice chicken&lt;/li&gt; <br >
+          &lt;li&gt;15 peice chicken&lt;/li&gt; <br >
+          &lt;li&gt;20 peice chicken&lt;/li&gt; <br >
+          &lt;/ol&gt;
+        </code>
+        <h4>CSS:</h4>
+        <code>
+          ol { <br >
+  color:#003A6B <br >
+}
+        </code>
+
+      </section>
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3>
+        <!--Learned that it is conventional to use unordered list for navbar and I can utilize in-text link to link page from FreeCodeCamp-->
+
+        <nav class="navbar">
+          <ul>
+            <li>
+              <a href="index.html" class="Home-NavBar">Home</a>
+            </li>
+            <li>
+              <a href="menu.html" class="Menu-NavBar">Menu</a>
+            </li>
+            <li>
+              <a href="about.html" class="About-NavBar">About</a>
+            </li>
+            <li>
+              <a href="order.html" class="Order-NavBar">Order</a>
+            </li>
+            <li>
+              <a href="contact.html" class="Contact-NavBar">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        
+        <h4>HTML:</h4>
+        <code>
+          &lt;nav class="navbar"&gt; <br >
+          &lt;ul&gt; <br >
+          &lt;li&gt; <br >
+          &lt;a href="index.html" class="Home-NavBar"&gt;Home&lt;/a&gt; <br >
+          &lt;/li&gt; <br >
+          &lt;li&gt; <br >
+          &lt;a href="menu.html" class="Menu-NavBar"&gt;Menu&lt;/a&gt; <br >
+          &lt;/li&gt; <br >
+          &lt;li&gt; <br >
+          &lt;a href="about.html" class="About-NavBar"&gt;About&lt;/a&gt; <br >
+          &lt;/li&gt; <br >
+          &lt;li&gt; <br >
+          &lt;a href="order.html" class="Order-NavBar"&gt;Order&lt;/a&gt; <br >
+          &lt;/li&gt; <br >
+          &lt;li&gt; <br >
+          &lt;a href="contact.html" class="Contact-NavBar"&gt;Contact&lt;/a&gt;
+          <br >
+          &lt;/li&gt; <br >
+          &lt;/ul&gt; <br >
+          &lt;/nav&gt;
+        </code>
+        <h4>CSS:</h4>
+        <code>
+          .navbar { <br >
+  display: flex; <br >
+  align-items: center; <br >
+  justify-content: space-between; <br>
+  padding-top: 40px; <br >
+  padding-left: 10%; <br >
+  padding-right: 10%; <br >
+} <br >
+
+.navbar ul li { <br >
+  list-style-type: none; <br >
+  display: inline-block; <br >
+  padding: 10px 20px;  <br >
+} <br >
+
+.navbar ul li a { <br >
+  color:#A62C2C; <br>
+  font-family: 'NeueMontreal'; <br >
+  font-weight: bold;  <br >
+  text-decoration: none; <br >
+} <br >
+
+.navbar ul li a:hover { <br >
+  color:#003A6B; <br >
+  transition: .3s;<br >
+} <br >
+        </code>
+      </section>
+
+      <section class="element">
+        <h3>Product/Service Listing</h3>
+        <div class="menu-container">
+          <h3 class="menu-title">Our Menu</h3>
+          <hr color="A62C2C" >
+          <div class="menu-items">
+            <h4 class="menu-cat">Dinners</h4>
+            <ul>
+              <li>2Pc Chicken Dinner $15</li>
+              <li>3Pc Chicken Dinner $17</li>
+              <li>4Pc Chicken Dinner $19</li>
+            </ul>
+
+            <h4 class="menu-cat">Snacks</h4>
+            <ul>
+              <li>2Pc Chicken Snack $13</li>
+              <li>3 Wings, Fries & Gravy $15</li>
+            </ul>
+
+            <h4 class="menu-cat">Kid's Packs</h4>
+            <ul>
+              <li>Leg, Fries, And Drink $13</li>
+              <li>Nuggets, Fries, And Drink $17.59</li>
+            </ul>
+
+            <h4 class="menu-cat">Sandwiches</h4>
+            <ul>
+              <li>Chicken Fillet Sandwich</li>
+              <li>Chicken Fillet Sandwich Combo</li>
+            </ul>
+          </div>
+        </div>
+        
+        <h4>HTML:</h4>
+        <code>
+       &lt;div class="menu-container"&gt; <br>
+  &lt;h3 class="menu-title"&gt;Our Menu&lt;/h3&gt; <br >
+  &lt;hr color="A62C2C" /&gt; <br >
+  &lt;div class="menu-items"&gt; <br>
+    &lt;h4 class="menu-cat"&gt;Dinners&lt;/h4&gt; <br >
+    &lt;ul&gt; <br >
+      &lt;li&gt;2Pc Chicken Dinner $15&lt;/li&gt; <br >
+      &lt;li&gt;3Pc Chicken Dinner $17&lt;/li&gt; <br >
+      &lt;li&gt;4Pc Chicken Dinner $19&lt;/li&gt; <br >
+    &lt;/ul&gt; <br >
+
+    &lt;h4 class="menu-cat"&gt;Snacks&lt;/h4&gt; <br >
+    &lt;ul&gt; <br>
+      &lt;li&gt;2Pc Chicken Snack $13&lt;/li&gt; <br > 
+      &lt;li&gt;3 Wings, Fries &amp; Gravy $15&lt;/li&gt;<br > 
+    &lt;/ul&gt; <br >
+
+    &lt;h4 class="menu-cat"&gt;Kid&apos;s Packs&lt;/h4&gt; <br >
+    &lt;ul&gt; <br >
+      &lt;li&gt;Leg, Fries, And Drink $13&lt;/li&gt; <br >
+      &lt;li&gt;Nuggets, Fries, And Drink $17.59&lt;/li&gt; <br >
+    &lt;/ul&gt; <br>
+
+    &lt;h4 class="menu-cat"&gt;Sandwiches&lt;/h4&gt; <br >
+    &lt;ul&gt; <br >
+      &lt;li&gt;Chicken Fillet Sandwich&lt;/li&gt;<br >
+      &lt;li&gt;Chicken Fillet Sandwich Combo&lt;/li&gt; <br >
+    &lt;/ul&gt; <br >
+  &lt;/div&gt; <br >
+&lt;/div&gt; <br >
+
+        </code>
+        <h4>CSS:</h4>
+        <code>
+          .menu-container { <br >
+  max-width: 500px; <br >
+  border: 2px solid #A62C2C; <br >
+  border-radius: 4px; <br >
+  background-color: #FAF2E6; <br >
+} <br >
+
+.menu-title { <br >
+  margin-left: 20px; <br >
+  font-family: 'NeueMontreal'; <br >
+  font-weight: bold; <br >
+  font-style: normal; <br >
+  color:#A62C2C; <br >
+} <br >
+
+.menu-cat { <br >
+  margin-left: 20px; <br >
+  font-family: 'NeueMontreal'; <br >
+  font-weight: bold; <br >
+  font-style: normal; <br >
+  color:#A62C2C; <br >
+} <br >
+.menu-items { <br >
+  color:#A62C2C; <br >
+} <br >
+
+        </code>
+      </section>
+
+      <section class="element">
+        <h3>Payment Form</h3>
+        <!--referred to W3School for the Checkout Form-->
+        <div class="payment-container">
+  <div class="payment-box">
+    <h1 class="payment-title">Payment</h1>
+    <form>
+      <label for="cname">Name on Card</label>
+      <input
+        type="text"
+        id="cname"
+        name="card-name"
+        placeholder="Name"
+      />
+      <br />
+
+      <label for="ccnum">Credit card number</label>
+      <input
+        type="text"
+        id="ccnum"
+        name="card-number"
+        placeholder="1111-2222-3333-4444"
+      />
+      <br />
+
+      <label for="exp-mm-yr">Exp Month/Year</label>
+      <input
+        type="text"
+        id="exp-mm-yr"
+        name="exp-mm-yr"
+        placeholder="mm/yr"
+      />
+      <br />
+
+      <label for="cvv">CVV</label>
+      <input
+        type="text"
+        id="cvv"
+        name="cvv"
+        placeholder="xxx"
+      />
+    </form>
+  </div>
+</div>
+
+        <h4>HTML:</h4>
+        <code>
+          &lt;div class="payment-container"&gt; <br >
+          &lt;div class="payment-box"&gt; <br >
+            &lt;h1 class="payment-title"&gt;Payment&lt;/h1&gt; <br >
+            &lt;form&gt; <br >
+              &lt;label for="cname"&gt;Name on Card&lt;/label&gt; <br >
+              &lt;input 
+                type="text"
+                id="cname"
+                name="card-name"
+                placeholder="Name"
+              /&gt; <br >
+              
+              &lt;label for="ccnum"&gt;Credit card number&lt;/label&gt; <br >
+              &lt;input
+                type="text"
+                id="ccnum"
+                name="card-number"
+                placeholder="1111-2222-3333-4444"
+              /&gt; 
+              <br >
+              &lt;label for="exp-mm-yr"&gt;Exp Month/Year&lt;/label&gt; <br>
+              &lt;input
+                type="text"
+                id="exp-mm-yr"
+                name="exp-mm-yr"
+                placeholder="mm/yr"
+              /&gt; 
+              <br >
+              &lt;label for="cvv"&gt;CVV&lt;/label&gt; <br >
+              &lt;input type="text" id="cvv" name="cvv" placeholder="xxx" /&gt; <br >
+            &lt;/form&gt; <br >
+          &lt;/div&gt; <br >
+        &lt;/div&gt; <br >
+        </code>
+        <h4>CSS:</h4>
+        <code>
+          .payment-container { <br >
+  max-width: 500px; <br >
+  margin: 0 auto; <br >
+  padding: 5%; <br >
+} <br >
+
+.payment-box { <br >
+  min-width: 500px; <br >
+  margin: 0 auto; <br >
+
+} <br >
+
+.payment-title { <br >
+  color: #A62C2C; <br >
+  font-family: 'NeueMontreal'; <br >
+  font-weight: bold; <br >
+  font-style: normal; <br >
+}
+        </code>
+      </section>
+
+      <section class="element">
+        <!--referred to the building forms material from css basics assignment-->
+        <!--fix later this aint it gang-->
+        <h3>Checkout Cart</h3>
+        <div class="checkout-container">
+          <h3 class="order-title">Your Order</h3>
+          <hr color="#A62C2C" >
+          <div class="checkout-items">
+            <p class="order-item">3Pc Chicken Dinner - $17</p>
+            <p class="order-item">Nuggets, Fries, And Drink - $17.59</p>
+            <p class="order-total">Order Total: $34.59</p>
+          </div>
+        </div>
+
+        <h4>HTML:</h4>
+        <code>
+          &lt;div class="checkout-container"&gt; <br >
+  &lt;h3 class="order-title"&gt;Your Order&lt;/h3&gt; <br >
+  &lt;hr color=&quot;#A62C2C&quot; /&gt; <br >
+  &lt;div class="checkout-items"&gt; <br >
+    &lt;p class="order-item"&gt;3Pc Chicken Dinner - $17&lt;/p&gt; <br >
+    &lt;p class="order-item"&gt;Nuggets, Fries, And Drink - $17.59&lt;/p&gt; <br >
+    &lt;p class="order-total"&gt;Order Total: $34.59&lt;/p&gt; <br >
+  &lt;/div&gt; <br >
+&lt;/div&gt; <br >
+
+        </code>
+        <h4>CSS:</h4>
+        <code>
+          .checkout-container { <br >
+  max-width: 400px; <br >
+  border: 2px solid #A62C2C; <br >
+  border-radius: 4px; <br >
+  background-color: #FAF2E6; <br >
+} <br >
+
+.checkout-items { <br >
+  margin-left: 10px; <br >
+  margin-bottom: 2rem; <br >
+} <br >
+
+.order-title { <br >
+  margin-left: 10px; <br >
+  font-family: 'NeueMontreal'; <br >
+  font-weight: bold; <br >
+  font-style: normal; <br >
+  color:#A62C2C <br >
+} <br >
+
+.order-total { <br >
+  text-decoration: underline; <br >
+}
+        </code>
+      </section>
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+    <section id="Branding-Ideas">
+      <h2>Brand Ideas</h2>
+      <section class="element">
+        <h3>What does the company do, or offer?</h3>
+        <p>
+          L.A. Chicken is a casual, fast food style spot that focuses mainly on
+          fried chicken. Their menu centers around crispy chicken available in
+          both regular and spicy options, with portions ranging from small
+          individual orders to larger family packs.
+        </p>
+        <h4>HTML:</h4>
+        <code>
+          &lt;p&gt;L.A. Chicken is a casual, fast food style spot that focuses
+          mainly on fried chicken. Their menu centers around crispy chicken
+          available in both regular and spicy options, with portions ranging
+          from small individual orders to larger family packs.&lt;/p&gt;
+        </code>
+      </section>
+
+      <section class="element">
+        <h3>Who is the company to potential customers? (as a person)</h3>
+        <p>
+          L.A. Chicken feels like a friendly and dependable person who just
+          wants to feed you well. It comes across as simple, reliable, and
+          comforting, offering familiar fried chicken and filling meals at an
+          affordable price.
+        </p>
+        <h4>HTML:</h4>
+        <code>
+          &lt;p&gt;L.A. Chicken feels like a friendly and dependable person who
+          just wants to feed you well. It comes across as simple, reliable, and
+          comforting, offering familiar fried chicken and filling meals at an
+          affordable price.&lt;/p&gt;
+        </code>
+      </section>
+
+      <section class="element">
+        <h3>
+          Why might this company entice someone to purchase a product or service
+        </h3>
+        <p>
+          L.A. Chicken might entice someone to make a purchase because it offers
+          comfort food that feels affordable and satisfying. The menu is simple
+          and easy to understand, the portions are filling, and the prices are
+          affordable, which makes it appealing to many people who want a quick
+          and affordable meal.
+        </p>
+        <h4>HTML:</h4>
+        <code>
+          &lt;p&gt;L.A. Chicken might entice someone to make a purchase because
+          it offers comfort food that feels affordable and satisfying. The menu
+          is simple and easy to understand, the portions are filling, and the
+          prices are affordable, which makes it appealing to many people who
+          want a quick and affordable meal.&lt;/p&gt;
+        </code>
+      </section>
+    </section>
+
+    <section id="Brand-Components">
+      <h2>Brand Components</h2>
+      <section class="element">
+        <h3>Fonts</h3>
+        <ul>
+          <li class="montreal-font">Neue Montreal</li>
+          <li class="simplon-font">Simplon Mono</li>
+        </ul>
+
+        <h4>HTML:</h4>
+        <code>
+          &lt;ul&gt; <br />
+          &lt;li class="montreal-font"&gt;Neue Montreal&lt;/li&gt; <br />
+          &lt;li class="simplon-font"&gt;Simplon Mono&lt;/li&gt; <br />
+          &lt;/ul&gt;
+        </code>
+      </section>
+
+      <section class="element">
+        <h3>Color Palette</h3>
+        <!--This will be my current color palette and I felt like this company would fit a vintage nostalgic color palette-->
+        <!--However, this may change.-->
+        <ul class="color-palette">
+          <li style="color: #a62c2c">Red1</li>
+          <li style="color: #e03c3f">Red2</li>
+          <li style="color: #faf2e6">White</li>
+          <li style="color: #003a6b">Dark Blue</li>
+
+        </ul>
+        <h4>HTML:</h4>
+        <code>
+          &lt;ul class="color-palette"&gt; <br >
+          &lt;li style="color: #A62C2C;"&gt;Red1&lt;/li&gt; <br >
+          &lt;li style="color:#e03c3f"&gt;Red2&lt;/li&gt; <br >
+          &lt;li style="color: #FAF2E6;"&gt;White&lt;/li&gt; <br >
+          &lt;li style="color: #003A6B;"&gt;Dark Blue &lt;/li&gt; <br >
+          &lt;/ul&gt;
+        </code>
+      </section>
+
+      <section class="element">
+        <h3>Imagery and Art Direction</h3>
+        <h4>Imagery</h4>
+        <img
+          src="img/Chicken-logo.png"
+          alt="icon found online used as brand logo"
+        >
+        <br />
+        <img
+          src="img/hero.jpg"
+          class="print-chicken"
+          alt="close up shot of fried chicken legs"
+        >
+        <br />
+        <img
+          src="img/menu-dec.png"
+          alt="a fried chicken figure"
+        >
+        <h4>HTML:</h4>
+        <code>
+          &lt;img src="img/chicken_sign.png" alt="picture of retro chicken art
+          sign"&gt;<br >
+          &lt;img src="img/chicken_art.jpg" class="print-chicken" alt="picture
+          of retro chicken art poster"&gt; <br >
+          &lt;img src="img/chicken_retro.png" alt="picture of retro chicken art
+          poster"&gt;
+        </code>
+        <h4>Art Direction</h4>
+        <img
+          src="img/image.png"
+          class="example-web"
+          alt="an image of a retro style website"
+        >
+        <br />
+        <img
+          src="img/image2.png"
+          class="example-web"
+          alt="an image of a retro style website"
+        >
+        <br />
+        <img
+          src="img/image3.png"
+          class="example-web"
+          alt="an image of a mix of retro and modern style website"
+        >
+        <p>
+          Here are some inspiration websites I have gathered. My goal is to
+          preserve LA Chicken's retro branding while introducing subtle modern
+          design elements to create a more contemporary feel.
+        </p>
+        <h4>HTML:</h4>
+        <code>
+          &lt;img src="img/image.png" class="example-web" alt="an image of a
+          retro style website"&gt; <br />
+          &lt;img src="img/image2.png" class="example-web" alt="an image of a
+          retro style website"&gt; <br />
+          &lt;img src="img/image3.png" class="example-web" alt="an image of a
+          mix of retro and modern style website"&gt; <br />
+          &lt;p&gt;Here are some inspiration websites I have gathered. My goal
+          is to preserve LA Chicken's retro branding while introducing subtle
+          modern design elements to create a more contemporary feel.&lt;/p&gt;
+        </code>
+      </section>
+    </section>
+
+    <section id="citations">
+      <h2>Citations</h2>
+
+      <ul>
+        <li>
+          Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>.
+          Retrieved from
+          <a
+            href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans"
+            >https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a
+          >
+        </li>
+        <li>Pangram Pangram Foundry. Mathieu Desjardins. 2018. <strong>Neue Montreal [Font]</strong>. Retrieved from 
+          <a href="https://pangrampangram.com/products/neue-montreal">https://pangrampangram.com/products/neue-montreal</a>
+        </li>
+        <li>
+          Swiss Typefaces. Emmanuel Rey. 2013. <strong>Simplon Mono [Font].</strong> Retrieved from 
+          <a href="https://www.onlinewebfonts.com/fonts/simplon_mono">
+            https://www.onlinewebfonts.com/fonts/simplon_mono
+          </a>
+        </li>
+        <li>
+          Bhansali, H. (n.d.). Hardik Bhansali — Portfolio. Retrieved February 2, 2026, from 
+          <a href="https://www.hardikbhansali.com/">https://www.hardikbhansali.com/</a>
+        </li>
+        <li>
+          DVIGA Marketing. (n.d.). Grink 2025. Retrieved February 2, 2026, from <a href="https://grink2025.dviga.marketing/">https://grink2025.dviga.marketing/</a>
+        </li>
+        <li>
+          Telepathic Instruments. (n.d.). Orchid ORC-1. Retrieved February 2, 2026, from 
+          <a href="https://telepathicinstruments.com/products/orchid-orc-1">https://telepathicinstruments.com/products/orchid-orc-1</a>
+        </li>
+        <li>
+          Vecteezy. (n.d.). Fried chicken retro cartoon (vector art). Retrieved February 2, 2026, from 
+          <a href="https://www.vecteezy.com/vector-art/37894513-fried-chicken-retro-cartoon-colorless">https://www.vecteezy.com/vector-art/37894513-fried-chicken-retro-cartoon-colorless</a>
+        </li>
+        <li>
+          Flaticon. (n.d.). Fried chicken [Icon]. Retrieved February 2, 2026, from 
+          <a href="https://www.flaticon.com/free-icon/fried-chicken_2884642">https://www.flaticon.com/free-icon/fried-chicken_2884642</a>
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
