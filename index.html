@@ -27,10 +27,9 @@
     </header>
     
     <section id="content_requirements">
-      <h2>Content Requirements</h2>
+      <h2>Company Updates &amp; Events</h2>
 
       <section id="updates">
-        <h3>Company Updates &amp; Events</h3>
         <ul>
           <li><strong>Feb 14:</strong> Valentine's Special</li>
           <li><strong>Mar 01:</strong> New spicy recipe test</li>
@@ -38,22 +37,22 @@
         </ul>
       </section>
 
+      <h2>About The Company</h2>
       <section id="about">
-        <h3>About The Company</h3>
         <p>
           DAY ROW, A cafe in Itaewon, one of the most minimal aesthetic cafe's for people who enjoy a quiet premise with delicious cofee and pastries.
         </p>
       </section>
 
+      <h2>Contact</h2>
       <section id="contact">
-        <h3>Contact</h3>
+        <h3>Contact us!</h3>
         <p>
           14-3 Itaewon-ro 49-gil, Seoul, South Korea<br>
           Phone: <a href="tel:+16045551234">(604) 555-1234</a><br>
           Email: <a href="mailto:info@lachicken.example">info@lachicken.example</a>
         </p>
 
-        <h4>Quick contact form</h4>
         <form id="contact-form">
           <label for="contact-name">Name</label>
           <input id="contact-name" name="name" type="text" />
@@ -68,23 +67,36 @@
         </form>
       </section>
 
+      <h2>Products &amp; Services (Listing)</h2>
       <section id="products">
-        <h3>Products &amp; Services (Listing)</h3>
-        <ul class="product-list">
-          <li><a href="#product-4pc">4Pc Chicken Dinner — $15</a></li>
-          <li><a href="#product-3pc">3Pc Chicken Dinner — $13</a></li>
-          <li><a href="#product-nuggets">Nuggets Combo — $12</a></li>
-        </ul>
+        <h3>Our Products!</h3>
+        <!-- Product card -->
+        <div class="product-page">
+
+          <div class="product-card">
+            <h3>Colombia Coffee</h3>
+            <img src="img/download.jpg" alt="Coffee">
+            <p><strong>$8</strong></p>
+            <a href="#">Add to cart</a>
+          </div>
+
+          <div class="product-card">
+            <h3>Colombia Decaf</h3>
+            <img src="img/merch.jpg" alt="Coffee">
+            <p><strong>$10</strong></p>
+            <a href="#">Add to cart</a>
+          </div>
+        </div>
       </section>
 
-      <section id="product-detail">
-        <h3 id="product-4pc">Product Detail — 4Pc Chicken Dinner</h3>
+      <h2>Detailed Product</h2>
+      <section id="Columbia Coffee">
+        <h3 id="detailedProduct">Columbian Coffee</h3>
+        <img src="img/merch.jpg" alt="Coffee">
         <p>
-          A generous 4-piece serving with your choice of fries or mashed
-          potatoes, coleslaw, and a medium drink. Options: regular or spicy.
+          Betania coffee with beans straight from Colombia
         </p>
-        <p><strong>Ingredients:</strong> Chicken, flour, seasoning, oil.</p>
-        <p><strong>Allergens:</strong> Gluten. See in-store info for cross-contact.</p>
+        <p><strong>Addons:</strong> Bourbon, Honey.</p>
         <button class="btn" onclick="location.href='checkout.html'">Buy Now</button>
       </section>
 
@@ -99,14 +111,11 @@
         <p>See <a href="checkout.html">Checkout Template</a> for the payment form.</p>
       </section>
 
+      <h2>Feedback</h2>
       <section id="feedback">
-        <h3>Feedback</h3>
-        <p>
-          We welcome feedback on products and service. Leave a rating and
-          comments below or contact us directly via email or phone.
-        </p>
 
         <form id="feedback-form">
+          <h3>Please Rate Us!</h3>
           <label for="rating">Rating</label>
           <select id="rating" name="rating">
             <option value="5">5 — Excellent</option>
@@ -122,12 +131,6 @@
           <button class="btn" type="submit">Submit Feedback</button>
         </form>
       </section>
-
-      <p>
-        Note: These content sections are examples integrated into the index
-        page — you can extract them to dedicated pages (About, Contact,
-        Product pages) as your project structure requires.
-      </p>
     </section>
 
     <!-- INTERACTIVE ELEMENTS SECTION // -->
