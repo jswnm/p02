@@ -33,11 +33,10 @@ h4 {
 }
 
 p {
-  font-family: 'Bodoni', serif;
+  font-family: 'Simplon Mono', serif;
   font-style: normal;
-  margin-top: 0;
   line-height: 2;
-  max-width: 50rem; 
+  max-width: 45rem; 
   color:#1a2054;
 }
 
@@ -128,14 +127,15 @@ label, input {
 }
 
 
-.bodoni-font {
-  font-family: "Bodoni", serif;
+.montreal-font {
+  font-family: "NeueMontreal", sans-serif;
+  font-weight: bold;
   font-style: normal;
   font-size: 2.5rem;
 }
 
-.grotesk-font {
-  font-family: "Grotesk55", sans-serif;
+.simplon-font {
+  font-family: "Simplon Mono", sans-serif;
   font-style: normal;
   font-size: 2.5rem;
 }
