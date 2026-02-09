@@ -1,7 +1,4 @@
-/*
-  STYLE GUIDE STYLING
-  Clean + normalized version
-*/
+/* Style Guide */
 
 *,
 *::before,
@@ -12,12 +9,9 @@
 body {
   font-family: 'NeueMontreal', sans-serif;
   padding: 2rem;
-  background-color: #FAF2E6;
 }
 
-/* -------------------------------
-   TYPOGRAPHY
--------------------------------- */
+/* Typography */
 
 h2 {
   margin-top: 6rem;
@@ -28,62 +22,20 @@ h3 {
   margin-top: 1rem;
 }
 
-.example {
-  font-style: normal;
-  color:#1a2054;
-}
-
 h4 {
   margin-bottom: 0.5rem;
 }
 
 p {
-  font-family: 'Simplon Mono', serif;
-  font-style: normal;
+  font-family: 'Simplon Mono', sans-serif;
+  margin-top: 0;
   line-height: 2;
-  max-width: 45rem; 
-  color:#1a2054;
-}
-
-
-nav a:hover, nav a:focus {
-  text-decoration: none;
-}
-
-code {
-  background-color: #EEE;
-  padding: 0.5rem;
-  display: block;
+  max-width: 45rem;
+  color: #003A6B;
 }
 
 ol {
-  color:#003A6B
-}
-
-/* checkout cart */
-
-.checkout-container {
-  max-width: 400px;
-  border: 2px solid #A62C2C;
-  border-radius: 4px;
-  background-color: #FAF2E6;
-}
-
-.checkout-items {
-  margin-left: 10px;
-  margin-bottom: 2rem;
-}
-
-.order-title {
-  margin-left: 10px;
-  font-family: 'NeueMontreal', serif;
-  font-weight: bold;
-  font-style: normal;
-  color:#A62C2C
-}
-
-.order-total {
-  text-decoration: underline;
+  color: #003A6B;
 }
 
 a {
@@ -95,9 +47,7 @@ a:hover {
   color: #003A6B;
 }
 
-/* -------------------------------
-   SECTION / BOX STYLING
--------------------------------- */
+/* Sections */
 
 .element {
   padding-bottom: 2rem;
@@ -128,64 +78,24 @@ a:hover {
   margin-bottom: 1rem;
   border-radius: 6px;
   font-family: 'Simplon Mono', sans-serif;
+  color: #003A6B;
 }
 
-
-.montreal-font {
-  font-family: "NeueMontreal", sans-serif;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 2.5rem;
-}
-
-.simplon-font {
-  font-family: "Simplon Mono", sans-serif;
-  font-style: normal;
-  font-size: 2.5rem;
-}
-
-.color-palette {
-  font-family: "NeueMontreal", sans-serif;
-  font-style: normal;
-  font-size: 2.5rem;
-}
-
-/*checkout cart*/
-
-.order-total {
-  margin-top: 5rem;
-}
-
-/* web examples */
-.example-web {
-  max-width: 50vw;
-}
-
-/*intext link*/
-
-a {
-  color:#1a2054;
-}
-
-a:hover, a:focus{
-  color: #000000;
-  text-decoration: none;
-}
-
-/* -------------------------------
-   NAVBAR
--------------------------------- */
+/*navbar*/
 
 .navbar {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 40px 10%;
+  padding-top: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .navbar ul li {
-  list-style: none;
+  list-style-type: none;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 20px; 
 }
 
 .navbar ul li a {
@@ -201,44 +111,27 @@ a:hover, a:focus{
   transition: .3s;
 }
 
-/* -------------------------------
-   BUTTONS
--------------------------------- */
+/* Button */
 
 .btn {
   font-family: 'NeueMontreal', sans-serif;
   font-size: large;
   padding: 15px 45px;
-  border: 3px solid #1a2054;
+  border: 3px solid #003A6B;
   background: none;
-  outline: none;
-  color: #1a2054;
-  position: relative;
-  z-index: 0;
+  color: #003A6B;
   border-radius: 12px;
-  transition: transform 0.3s ease;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  background-color: #fff;
 }
 
 .btn:hover {
   transform: scale(1.05);
-  background-color: #b4b4b4;
+  background-color: #fff;
 }
 
-/*customer form */
-.order-detail {
-  color:#1a2054;
-  font-family: 'NeueMontreal', sans-serif;
-  font-weight: bold;
-}
-
-.form-box{
-  min-width: 500px;
-  margin: 0 auto;
-}
-
-/* -------------------------------
-   GLOBAL FORM NORMALIZATION
--------------------------------- */
+/* Forms */
 
 form {
   max-width: 700px;
@@ -250,12 +143,8 @@ label {
   display: block;
   font-family: 'NeueMontreal', sans-serif;
   font-weight: bold;
-  color:#1a2054;
-  margin-bottom: 5rem;
-}
-
-input {
-  font-family: 'Simplon Mono', sans-serif;
+  color: #003A6B;
+  margin-bottom: 0.4rem;
 }
 
 /* all form fields */
@@ -268,9 +157,8 @@ textarea {
   color: #003A6B;
   border: 2px solid #003A6B;
   background: transparent;
-  border: 0;
-  border-bottom: 2px solid #1a2054;
-  outline: none;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
 }
 
 /* inputs + select */
@@ -282,33 +170,10 @@ select {
   padding: 0.6rem 0.75rem;
 }
 
-/* textarea */
-textarea {
-  height: 160px;
-  resize: none;
-  padding: 1rem;
-  border-radius: 8px;
-  line-height: 1.6;
-  background-color: #fff;
-}
-
-.payment-title {
-  color: #1a2054;
-  font-family: 'NeueMontreal', sans-serif;
-  font-weight: bold;
-  font-style: normal;
-}
-
-/* -------------------------------
-   FEEDBACK FORM LAYOUT
--------------------------------- */
-
-#feedback-form {
-  gap: 2rem;
-  background-color: #fff;
-  padding: 2.5rem;
-  border-radius: 12px;
-  border: 2px solid #003A6B;
+/* Radio */
+*:after,
+*:before{
+  box-sizing: border-box;
 }
 
 .meal-option {
@@ -318,26 +183,30 @@ textarea {
   color:#1a2054
 }
 
-/* -------------------------------
-   CHECKOUT / MENU BOXES
--------------------------------- */
-
-.checkout-container,
-.menu-container {
-  max-width: 500px;
-  border: 2px solid #003A6B;
-  background-color: #FAF2E6;
-  border-radius: 6px;
-  padding: 1.5rem;
+.container{
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* -------------------------------
-   IMAGES
--------------------------------- */
+input[type="radio"]{
+  display: none;
+}
 
-.hero-img {
-  max-width: 500px;
-  transition: transform 0.3s ease;
+label{
+  display: block;
+  cursor: pointer;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+label span{
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px 10px 10px;
+  border-radius: 25px;
+  transition: .25s ease;
 }
 
 label span:hover,
@@ -359,6 +228,73 @@ label span:before{
 input[type="radio"]:checked + span:before{
   box-shadow: inset 0 0 0 10px #1a2054;
 }
+
+/* textarea */
+textarea {
+  height: 160px;
+  resize: none;
+  padding: 1rem;
+  border-radius: 8px;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+/* focus state */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  background-color: #fff;
+}
+
+/* Feedback form */
+
+#feedback-form {
+  gap: 2rem;
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 2px solid #003A6B;
+}
+
+#feedback-form h3 {
+  margin-bottom: 3rem;
+}
+
+/* Checkout */
+
+.checkout-container,
+.menu-container {
+  max-width: 500px;
+  border: 2px solid #003A6B;
+  background-color: #FAF2E6;
+  border-radius: 6px;
+  padding: 1.5rem;
+}
+
+/* IMAGES */
+
+.hero-img {
+  max-width: 500px;
+  transition: transform 0.3s ease;
+}
+
+.hero-img:hover {
+  transform: scale(1.05);
+}
+
+.product-page {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.5rem;
+  flex-wrap: wrap; 
+}
+
+/* Product card */
+.product-card {
+  width: 240px;
+  padding: 1.5rem;
 
   border: 2px solid #003A6B;
   border-radius: 14px;
@@ -415,4 +351,14 @@ input[type="radio"]:checked + span:before{
   background-color: #003A6B;
   color: #fff;
   transform: scale(1.05);
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
 }
