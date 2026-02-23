@@ -9,6 +9,7 @@ body {
   font-family: 'NeueMontreal', sans-serif;
   padding: 2rem;
   margin: 0;
+  background-color: #f2f0ef;
 }
 
 /* Typography */
@@ -20,7 +21,7 @@ p {
 }
 
 h1, h2 {
-  color: #1a2054;
+  color: #003A6B;
 }
 
 /*navbar*/
@@ -42,12 +43,13 @@ h1, h2 {
 
 .navbar ul li a {
   position: relative;
-  color: #000000;
+  color: #003A6B;
   font-family: "NeueMontreal", sans-serif;
   font-style: normal;
   font-weight: bold;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
 }
 
 .navbar ul li a::after {
@@ -57,14 +59,14 @@ h1, h2 {
   bottom: -4px;
   width: 100%;
   height: 2.5px;
-  background-color: #003A6B;
+  background-color: #000000;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.5s ease;
 }
 
 .navbar ul li a:hover {
-  color: #003A6B;
+  color: #000000;
 }
 
 .navbar ul li a:hover::after {
@@ -106,16 +108,30 @@ h1, h2 {
 
 .checkout-container {
   border: 2px solid #003A6B;
-  background: #FAF2E6;
+  background: #f2f0ef;
   padding: 1.5rem;
   border-radius: 8px;
+}
+
+.checkout-page-container {
+  max-width: 1100px;
+  margin: 5rem auto;
+  width: 100%;
+}
+
+.checkout-intro {
+  margin-left: 2rem;
+}
+
+.checkout-layout {
+  margin: 2rem 0 0;
 }
 
 /* Payment */
 
 .payment-box {
   border: 2px solid #003A6B;
-  background: #FAF2E6;
+  background: #f2f0ef;
   padding: 1.5rem;
   border-radius: 8px;
 }
@@ -126,6 +142,7 @@ h1, h2 {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: bold;
+  color: #003A6B;
 }
 
 .payment-form input {
@@ -135,7 +152,7 @@ h1, h2 {
   padding: 0.6rem;
   border: 2px solid #003A6B;
   border-radius: 6px;
-  background: #fff;
+  background: #f2f0ef;
 }
 
 /* Button */
@@ -157,6 +174,10 @@ h1, h2 {
   background-color: #fff;
 }
 
+footer {
+  margin-top: 9rem;
+}
+
 /* Responsive */
 
 @media (max-width: 800px) {
@@ -170,3 +191,4 @@ h1, h2 {
     max-width: 100%;
   }
 }
+

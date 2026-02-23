@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #f2f0ef;
 }
 
 header {
@@ -10,9 +11,18 @@ header {
   z-index: 9999;
 }
 
+p {
+  font-family: 'Simplon Mono', sans-serif;
+  color: #003A6B;
+  line-height: 1.8;
+}
+
+h1, h2 {
+  color: #003A6B;
+}
+
 /*navbar*/
 .navbar {
-  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,7 +39,7 @@ header {
 
 .navbar ul li a {
   position: relative;
-  color: #ffffff;
+  color: #f2f0ef;
   font-family: "NeueMontreal", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -63,6 +73,7 @@ header {
 .hero {
   width: auto;
   min-height: 100vh;
+  display: flex;
   position: relative;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
@@ -81,12 +92,162 @@ header {
 }
 
 .hero-text {
-  margin-top: 27.5rem;
-  padding-left: 3rem;
-  align-items: flex-start;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
+.hero-text h1 {
+  font-family: 'NeueMontreal', sans-serif;
+  color: #f2f0ef;
+  font-size: 4rem;
+}
+
+.hero-text p {
+  font-family: 'Simplon Mono', sans-serif;
+  color: #f2f0ef;
+  width: 60ch;
+  font-size: 1rem;
+  margin-top: -1rem;
+}
+
+/* Product card */
+.product-card {
+  width: 240px;
+  padding: 1.5rem;
+
+  border: 2px solid #003A6B;
+  border-radius: 14px;
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Product images */
+.product-card img {
+  width: 190px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0.75rem 0;
+}
+
+/* Product text */
+.product-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  text-align: center;
+}
+
+.product-card p {
+  margin: 0.25rem 0;
+  text-align: center;
+}
+
+/* Button */
+.product-card a {
+  margin-top: auto;
+  display: inline-block;
+
+  padding: 0.6rem 1.4rem;
+  border: 2px solid #003A6B;
+  background-color: #fff;
+
+  color: #003A6B;
+  font-family: 'NeueMontreal', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+
+  border-radius: 999px;
+  cursor: pointer;
+
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.product-card a:hover,
+.product-card a:focus {
+  background-color: #003A6B;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+#products {
+  max-width: 1100px;
+  margin: 5rem auto 1.5rem auto;
+  padding: 3rem;
+
+  border: 2px solid #003A6B;
+  border-radius: 20px;
+  background-color: #fdfdfd;
+}
+
+/* Center section titles */
+#products h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+  font-size: 2.5rem;
+  font-family: 'NeueMontreal', sans-serif;
+  color: #003A6B;
+}
+
+#products h3 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+  font-size: 1.25rem;
+  font-family: 'NeueMontreal', sans-serif;
+  color: #003A6B;
+}
+
+/* Layout for product cards */
+.product-page {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Button */
+
+.btn {
+  font-family: 'Simplon Mono', sans-serif;
+  padding: 16px 40px;
+  border: 2px solid #003A6B;
+  background: none;
+  color: #003A6B;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  background-color: #fff;
+  font-size: 1.1rem;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background-color: #fff;
+}
+
+.checkout-btn {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  margin-top: 9rem;
+}
+
+.footer-container {
+  margin: 0 auto;
+  margin: 2rem 2rem;
+}
+
