@@ -118,6 +118,16 @@ h1, h2 {
   margin-top: -1rem;
 }
 
+#about {
+  max-width: 800px;      
+  margin: 9rem auto;     
+  text-align: center;   
+  padding: 0 2rem;       
+}
+
+#about h1 {
+  font-family: "NeueMontreal", sans-serif;
+}
 /* Product card */
 .product-card {
   width: 240px;
