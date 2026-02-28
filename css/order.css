@@ -1,8 +1,4 @@
-/* checkout.css */
-
-/* -----------------------------
-  RESET + BASE
------------------------------ */
+/* Reset */
 *,
 *::before,
 *::after {
@@ -10,15 +6,16 @@
 }
 
 body {
-  font-family: "NeueMontreal", sans-serif;
+  font-family: 'NeueMontreal', sans-serif;
+  padding: 2rem;
   margin: 0;
-  padding: 0;
   background-color: #f2f0ef;
-  color: #003A6B;
 }
 
+/* Typography */
+
 p {
-  font-family: "Simplon Mono", sans-serif;
+  font-family: 'Simplon Mono', sans-serif;
   color: #003A6B;
   line-height: 1.8;
   margin: 0;
@@ -29,19 +26,15 @@ h1, h2, h3 {
   margin: 0;
 }
 
-/* -----------------------------
-  NAVBAR
------------------------------ */
-.site-header {
-  border-bottom: 1px solid rgba(0, 58, 107, 0.2);
-  background: #f2f0ef;
-}
+/* NAVBAR */
 
 .navbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.75rem 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 0.75rem;
 }
 
 .navbar ul {
@@ -86,31 +79,27 @@ h1, h2, h3 {
   transform: scaleX(1);
 }
 
-/* -----------------------------
-  MAIN LAYOUT
------------------------------ */
+/* MAIN LAYOUT */
+
 main {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 2.5rem 1rem 4rem;
+  padding-top: 2rem;
 }
 
 #products h2 {
-  margin: 1.25rem 0 1.5rem;
-  font-size: 2rem;
-  letter-spacing: 0.02em;
+  margin-bottom: 2rem;
 }
 
-/* -----------------------------
-  PRODUCT GRID
------------------------------ */
+/* PRODUCT GRID */
+
 .product-page {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 900px) {
   .product-page {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -122,54 +111,42 @@ main {
   }
 }
 
-/* -----------------------------
-  PRODUCT CARD
------------------------------ */
+/* PRODUCT CARD */
+
 .product-card {
   border: 2px solid #003A6B;
-  border-radius: 12px;
   background: #f2f0ef;
-  padding: 1.25rem;
+  padding: 1.5rem;
+  border-radius: 8px;
 
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 1rem;
 
-  box-shadow: 0 10px 24px rgba(0, 58, 107, 0.08);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .product-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 14px 34px rgba(0, 58, 107, 0.14);
-}
-
-.product-card h3 {
-  font-size: 1.15rem;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 58, 107, 0.15);
 }
 
 .product-card img {
   width: 100%;
-  height: 170px;
+  height: 180px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 6px;
   border: 2px solid #003A6B;
-  display: block;
 }
 
-/* price + qty row */
 .price-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
-  margin-top: 0.25rem;
 }
 
-/* -----------------------------
-  QUANTITY INPUT (NO JS)
-  Uses native browser +/– steppers
------------------------------ */
+/* QUANTITY INPUT */
+
 .qty-wrap {
   display: flex;
   align-items: center;
@@ -177,67 +154,59 @@ main {
 }
 
 .qty-label {
-  font-family: "Simplon Mono", sans-serif;
-  font-size: 0.95rem;
-  opacity: 0.9;
+  font-family: 'Simplon Mono', sans-serif;
+  font-size: 0.9rem;
 }
 
 .qty-input {
-  width: 80px;
+  width: 70px;
   height: 42px;
-  padding: 0 0.6rem;
+  padding: 0 0.5rem;
   border: 2px solid #003A6B;
-  border-radius: 10px;
+  border-radius: 6px;
   background: #f2f0ef;
   color: #003A6B;
-  font-family: "Simplon Mono", sans-serif;
+  font-family: 'Simplon Mono', sans-serif;
   font-size: 1rem;
 }
 
-/* remove ugly default outline & add a clean focus */
 .qty-input:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(0, 58, 107, 0.15);
 }
 
-/* -----------------------------
-  CHECKOUT BUTTON
------------------------------ */
+/* CHECKOUT BUTTON */
+
 .checkout-btn {
   display: flex;
   justify-content: center;
-  margin-top: 2.5rem;
+  margin-top: 3rem;
+  
 }
 
 .btn {
-  font-family: "Simplon Mono", sans-serif;
-  height: 48px;
-  padding: 0 28px;
-  border-radius: 12px;
+  font-family: 'Simplon Mono', sans-serif;
+
+  padding: 14px 40px;
+  font-size: 1.1rem;
+
   border: 2px solid #003A6B;
-  background: #003A6B;
-  color: #f2f0ef;
+  background: none;
+  color: #003A6B;
+
+  border-radius: 8px;
   cursor: pointer;
-  transition: transform 0.15s ease, background-color 0.15s ease;
+
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  background-color: #f2f0ef;
 }
 
 .btn:hover {
-  transform: translateY(-1px);
-  background: #000000;
-  border-color: #000000;
+  transform: scale(1.05);
+  background-color: #f2f0ef;
 }
 
-/* -----------------------------
-  FOOTER
------------------------------ */
+/* FOOTER */
+
 footer {
-  max-width: 1100px;
-  margin: 4rem auto 2rem;
-  padding: 0 1rem;
-}
-
-footer hr {
-  border: none;
-  border-top: 1px solid rgba(0, 58, 107, 0.25);
-  margin-bottom: 1.5rem;
+  margin-top: 9rem;
 }
