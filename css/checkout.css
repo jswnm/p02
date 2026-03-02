@@ -29,7 +29,7 @@ p {
 }
 
 h1, h2 {
-  color: #003A6B;
+  color: #002D68;
 }
 
 /* shared navbar*/
@@ -150,7 +150,11 @@ h1, h2 {
   font-family: "NeueMontreal", sans-serif;
   display: block;
   margin-bottom: 0.5rem;
-  color: #003A6B;
+  color: #002D68;
+}
+
+.payment-form input:focus {
+  outline: none;
 }
 
 .payment-form input {
@@ -159,7 +163,7 @@ h1, h2 {
   height: 44px;
   margin-bottom: 1.5rem;
   padding: 0.6rem;
-  border-bottom: 2px solid #003A6B;
+  border-bottom: 2px solid #002D68;
   background: #f2f0ef;
 }
 
@@ -168,9 +172,9 @@ h1, h2 {
 .btn {
   font-family: 'Simplon Mono', sans-serif;
   padding: 5px 20px;
-  border: 2px solid #003A6B;
+  border: 2px solid #002D68;
   background: none;
-  color: #003A6B;
+  color: #002D68;
   border-radius: 6px;
   cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s ease;
@@ -208,7 +212,7 @@ footer {
 .footer-container a:visited,
 .footer-container a:active,
 .footer-container a:focus {
-  color: #003A6B;
+  color: #002D68;
   text-decoration: underline;
 }
 

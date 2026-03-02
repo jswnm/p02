@@ -13,12 +13,12 @@ header {
 
 p {
   font-family: 'Simplon Mono', sans-serif;
-  color: #003A6B;
+  color: #002D68;
   line-height: 1.8;
 }
 
 h1, h2 {
-  color: #003A6B;
+  color: #002D68;
   font-family: "NeueMontreal", sans-serif;
 }
 
@@ -95,7 +95,7 @@ h1, h2 {
 .hero-text {
   position: absolute;
   top: 30%;
-  left: 15%;                 /* controls how far from left edge */
+  left: 10%;                 /* controls how far from left edge */
   transform: translateY(-50%); /* keep it vertically centered */
   z-index: 2;
 
@@ -107,13 +107,12 @@ h1, h2 {
 
 .hero-text h1 {
   font-family: 'NeueMontreal', sans-serif;
-  color: #003a6b;;
+  color: #002D68;
   font-size: 4rem;
 }
 
 .hero-text p {
-  width: min(60ch, 90vw);     /* responsive: not too wide on mobile */
-  margin-top: 0.5rem;         /* remove negative margin */
+  width: min(55ch, 90vw);     
 }
 
 #about {
@@ -204,7 +203,7 @@ footer {
 .footer-container a:visited,
 .footer-container a:active,
 .footer-container a:focus {
-  color: #003A6B;
+  color: #002D68;
   text-decoration: underline;
 }
 
