@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   background-color: #f2f0ef;
@@ -70,41 +71,10 @@ h1, h2 {
   transform: scaleX(1);
 }
 
-/*menu*/
-.mini-menu {
-  max-width: 700px;
-  margin: 8rem auto;
-  padding: 0 2rem;
-}
-
-.mini-menu h1 {
-  font-family: "NeueMontreal", sans-serif;
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
-  color: #003A6B;
-}
-
-.menu-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.menu-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 0.8rem;
-  border-bottom: 1px solid #003A6B;
-  font-family: "Simplon Mono", sans-serif;
-  font-size: 1rem;
-  color: #003A6B;
-}
-
 
 /*footer*/
 footer {
-  margin-top: 20rem;
+  margin-top: 22rem;
 }
 
 .footer-container {
@@ -130,4 +100,73 @@ footer {
 .footer-container a:focus {
   color: #003A6B;
   text-decoration: underline;
+}
+
+/*rewards*/
+.rewards {
+  max-width: 700px;
+  margin: 14rem auto;
+  padding: 0 2rem;
+  color: #003A6B;
+}
+
+.rewards h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.rewards p {
+  margin-bottom: 2.5rem;
+}
+
+.input-row {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.input-group {
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.input-group label {
+  font-family: "NeueMontreal", sans-serif;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.input-group input {
+  border: none;
+  border-bottom: 2px solid #003A6B;
+  background: transparent;
+  padding: 0.5rem 0;
+  font-family: "Simplon Mono", sans-serif;
+  font-size: 1rem;
+  color: #003A6B;
+  outline: none;
+}
+
+.input-group input:focus {
+  border-bottom: 2px solid #000000;
+}
+
+/*button*/
+.btn {
+  font-family: 'Simplon Mono', sans-serif;
+  padding: 5px 20px;
+  border: 2px solid #003A6B;
+  background: none;
+  color: #003A6B;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  background-color: #f2f0ef;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background-color: #f2f0ef;
 }
