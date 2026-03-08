@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+  background-color: #f2f0ef;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+p {
+  font-family: 'Simplon Mono', sans-serif;
+  color: #003A6B;
+  line-height: 1.8;
+}
+
+h1, h2 {
+  color: #003A6B;
+  font-family: "NeueMontreal", sans-serif;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 0.5rem;
+}
+
+.navbar ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.navbar ul li a {
+  position: relative;
+  color: #003a6b;
+  font-family: "NeueMontreal", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+}
+
+.navbar ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+}
+
+.navbar ul li a:hover {
+  color: #000000;
+}
+
+.navbar ul li a:hover::after {
+  transform: scaleX(1);
+}
+
+/* footer */
+footer {
+  margin-top: 22rem;
+}
+
+.footer-container {
+  margin: 0 auto;
+  margin: 2rem 2rem;
+}
+
+#logo-container {
+  text-align: start;
+  margin-bottom: 2rem;
+  margin-left: -2rem;
+}
+
+.drc-logo {
+  width: 250px;
+  height: auto;
+  display: block;
+}
+
+.footer-container a,
+.footer-container a:visited,
+.footer-container a:active,
+.footer-container a:focus {
+  color: #003A6B;
+  text-decoration: underline;
+}
+
+/* rewards */
+.rewards {
+  max-width: 700px;
+  margin: 14rem auto;
+  padding: 0 2rem;
+  color: #003A6B;
+}
+
+.rewards h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.rewards p {
+  margin-bottom: 2.5rem;
+}
+
+.rewards-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-row {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.input-group {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.input-group label {
+  font-family: "NeueMontreal", sans-serif;
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.03em;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+  border: none;
+  border-bottom: 2px solid #003A6B;
+  background: transparent;
+  padding: 0.7rem 0;
+  font-family: "Simplon Mono", sans-serif;
+  font-size: 1rem;
+  color: #003A6B;
+  outline: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* ratings */
+.input-group select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  padding-right: 2rem;
+  background-image: linear-gradient(45deg, transparent 50%, #003A6B 50%),
+                    linear-gradient(135deg, #003A6B 50%, transparent 50%);
+  background-position: calc(100% - 14px) calc(50% - 3px),
+                       calc(100% - 8px) calc(50% - 3px);
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+}
+
+/* Comments */
+.input-group textarea {
+  min-height: 120px;
+  resize: vertical;
+  border: 2px solid #003A6B;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 0.2rem;
+  line-height: 1.6;
+}
+
+/* focus states */
+.input-group input:focus,
+.input-group select:focus {
+  border-bottom: 2px solid #000000;
+}
+
+.input-group textarea:focus {
+  border: 2px solid #000000;
+}
+
+/* placeholder */
+.input-group textarea::placeholder,
+.input-group input::placeholder {
+  color: rgba(0, 58, 107, 0.6);
+}
+
+/* button */
+.btn {
+  font-family: 'Simplon Mono', sans-serif;
+  padding: 8px 20px;
+  border: 2px solid #003A6B;
+  background: none;
+  color: #003A6B;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #f2f0ef;
+  transition: transform 0.3s ease;
+  width: fit-content;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
