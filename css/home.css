@@ -94,7 +94,7 @@ h1, h2 {
 
 .hero-text {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 10%;                 /* controls how far from left edge */
   transform: translateY(-50%); /* keep it vertically centered */
   z-index: 2;
