@@ -243,11 +243,10 @@ footer {
 #logo-container {
   text-align: start; 
   margin-bottom: 2rem;
-  margin-left: -2rem;
 }
 
 .drc-logo {
-  width: 250px;      
+  width: 8rem;      
   height: auto; 
   display:block     
 }
