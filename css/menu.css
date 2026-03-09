@@ -80,24 +80,20 @@ h1, h2 {
   transform: scaleX(1);
 }
 
-/* ===============================
-   MENU SECTION (Compact Version)
-=================================*/
-
 .menu-section {
-  margin: 14rem auto;          /* smaller outer spacing */
-  padding: 0 1.5rem;          /* less side padding */
+  margin: 14rem auto;
+  padding: 0 1.5rem;
 }
 
 .menu-container {
-  max-width: 800px;           /* was 900px */
+  max-width: 800px;
   margin: 0 auto;
 }
 
 /* Title */
 .menu-title {
   font-family: "NeueMontreal", sans-serif;
-  font-size: 2.2rem;          /* was 3rem */
+  font-size: 2.2rem;
   color: #002D68;
 }
 
@@ -120,13 +116,12 @@ h1, h2 {
 
 /* Row */
 .menu-row {
-  padding: 0.9rem 0;          /* smaller vertical padding */
-  border-bottom: 1px solid #003A6B;  /* thinner divider */
+  padding: 0.9rem 0;
+  border-bottom: 1px solid #003A6B;
   cursor: pointer;
-  transition: padding 0.2s ease;
+  transition: padding 0.25s ease;
 }
 
-/* Name + price row */
 .menu-main {
   display: flex;
   justify-content: space-between;
@@ -134,16 +129,14 @@ h1, h2 {
   gap: 1.5rem;
 }
 
-/* Text */
 .menu-name,
 .menu-price {
   font-family: "Simplon Mono", sans-serif;
-  font-size: 1rem;            /* was 1.2rem */
+  font-size: 1rem;
   color: #002D68;
   transition: color 0.2s ease;
 }
 
-/* Price block */
 .price-block {
   display: flex;
   flex-direction: column;
@@ -151,10 +144,9 @@ h1, h2 {
   gap: 0.15rem;
 }
 
-/* Tiny add link */
 .menu-add {
   font-family: "Simplon Mono", sans-serif;
-  font-size: .8rem;          /* slightly smaller */
+  font-size: .8rem;
   text-decoration: none;
   color: #002D68;
   opacity: 0.7;
@@ -167,34 +159,50 @@ h1, h2 {
   opacity: 1;
 }
 
-/* Description */
 .menu-description {
   font-family: "Simplon Mono", sans-serif;
-  font-size: 0.8rem;          /* smaller */
+  font-size: 0.8rem;
   color: #002D68;
   margin: 0;
   line-height: 1.5;
-
   max-height: 0;
   overflow: hidden;
   opacity: 0;
   transform: translateY(-4px);
-
   transition:
     max-height 0.25s ease,
     opacity 0.2s ease,
     transform 0.2s ease;
 }
 
+/* Image */
+.menu-img {
+  display: block;
+  width: 5rem;
+  height: auto;
+  margin-top: 0;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
 /* Hover expand */
 .menu-row:hover {
-  padding-bottom: 1.25rem;
+  padding-bottom: 1.5rem;
 }
 
 .menu-row:hover .menu-description {
   max-height: 55px;
   opacity: 1;
   transform: translateY(4px);
+}
+
+.menu-row:hover .menu-img {
+  max-height: 160px;
+  opacity: 1;
+  transform: translateY(0);
+  margin-top: 0.75rem;
 }
 
 .menu-row:hover .menu-name,
@@ -216,8 +224,11 @@ h1, h2 {
   .menu-description {
     font-size: 0.75rem;
   }
-}
 
+  .menu-img {
+    width: 100px;
+  }
+}
 
 /*footer*/
 footer {

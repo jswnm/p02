@@ -285,7 +285,7 @@ textarea:focus {
   padding: 1.5rem;
 }
 
-/* Layout for checkout page: keep order and payment centered and responsive */
+/* Layout for checkout page */
 .checkout-layout {
   display: flex;
   justify-content: center;
@@ -296,7 +296,6 @@ textarea:focus {
   margin: 0 auto;
 }
 
-/* make the two columns exact side-by-side */
 .checkout-layout > .checkout-container,
 .checkout-layout > .payment-container {
   flex: 0 0 48%;
