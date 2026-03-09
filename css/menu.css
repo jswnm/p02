@@ -291,13 +291,26 @@ footer {
 }
 
 .menu-qty {
-  width: 45px;
+  width: 2rem;
   font-family: "Simplon Mono", sans-serif;
   font-size: 0.75rem;
   color: #002D68;
-  border: 1px solid #002D68;
-  border-radius: 3px;
+
+  border: none;
   background: transparent;
+
   text-align: center;
-  padding: 2px 4px;
+  padding: 2px 2px;
+
+  outline: none;
+  transition: border-color 0.25s ease;
+}
+
+.menu-qty:focus {
+  border-bottom: 1.5px solid #000000;
+}
+
+.menu-qty::-webkit-inner-spin-button {
+  opacity: 0.7;
+  height: 1.2rem;
 }
