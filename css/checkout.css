@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+/* Page body styling */
 body {
   font-family: 'NeueMontreal', sans-serif;
   padding-top: 3rem;
@@ -12,6 +13,7 @@ body {
   background-color: #f2f0ef;
 }
 
+/* Fixed header with gradient background */
 header {
   position: fixed;
   top: 0;
@@ -29,6 +31,7 @@ header {
     rgba(242,240,239,0) 100%
   );
 }
+
 /* Typography */
 
 p {
@@ -37,11 +40,12 @@ p {
   line-height: 1.8;
 }
 
+/* Shared heading colors */
 h1, h2, h3 {
   color: #002D68;
 }
 
-/* shared navbar*/
+/* Shared navbar */
 .navbar {
   display: flex;
   align-items: center;
@@ -51,15 +55,17 @@ h1, h2, h3 {
   padding-top: 0.5rem;
 }
 
+/* Navbar list items */
 .navbar ul li {
   list-style-type: none;
   display: inline-block;
   padding: 10px 20px;
 }
 
+/* Navbar links */
 .navbar ul li a {
   position: relative;
-  color: #003a6b;;
+  color: #003a6b;
   font-family: "NeueMontreal", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -68,6 +74,7 @@ h1, h2, h3 {
   letter-spacing: 0.1em;
 }
 
+/* Animated underline effect */
 .navbar ul li a::after {
   content: "";
   position: absolute;
@@ -81,10 +88,12 @@ h1, h2, h3 {
   transition: transform 0.5s ease;
 }
 
+/* Navbar hover state */
 .navbar ul li a:hover {
   color: #000000;
 }
 
+/* Navbar underline on hover */
 .navbar ul li a:hover::after {
   transform: scaleX(1);
 }
@@ -95,21 +104,23 @@ h1, h2, h3 {
   margin-top: 8rem;
 }
 
+/* Main checkout layout */
 .checkout-layout {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 2rem;
-
   max-width: 1100px;
   margin: 3rem auto;
   width: 100%;
 }
 
+/* Intro section spacing */
 .checkout-intro {
   margin-left: 5rem;
 }
 
+/* Intro responsive spacing */
 @media (max-width: 800px) {
   .checkout-intro {
     margin-left: 0.5rem;
@@ -117,6 +128,7 @@ h1, h2, h3 {
   }
 }
 
+/* Shared width for order and payment sections */
 .checkout-container,
 .payment-container {
   flex: 1;
@@ -124,7 +136,7 @@ h1, h2, h3 {
   width: 100%;
 }
 
-/* Order Summary Box */
+/* Order summary box */
 
 .checkout-container {
   background: #f2f0ef;
@@ -132,16 +144,19 @@ h1, h2, h3 {
   height: 540px;
 }
 
+/* Overall page container */
 .checkout-page-container {
   max-width: 1100px;
   margin: 5rem auto;
   width: 100%;
 }
 
+/* Updated intro spacing */
 .checkout-intro {
   margin-left: 2rem;
 }
 
+/* Updated layout spacing */
 .checkout-layout {
   margin: 2rem 0 0;
 }
@@ -153,7 +168,7 @@ h1, h2, h3 {
   border-radius: 8px;
 }
 
-/* Payment Form Styling */
+/* Payment form styling */
 
 .payment-form label {
   margin-top: 1rem;
@@ -163,10 +178,12 @@ h1, h2, h3 {
   color: #002D68;
 }
 
+/* Remove default focus outline */
 .payment-form input:focus {
   outline: none;
 }
 
+/* Payment input fields */
 .payment-form input {
   border: none;
   width: 100%;
@@ -177,6 +194,7 @@ h1, h2, h3 {
   background: #f2f0ef;
 }
 
+/* Divider under payment heading */
 .paymentform-line {
   margin-bottom: 1rem;
 }
@@ -195,32 +213,38 @@ h1, h2, h3 {
   background-color: #f2f0ef;
 }
 
+/* Button hover effect */
 .btn:hover {
   transform: scale(1.05);
   background-color: #f2f0ef;
 }
 
-/*footer*/
+/* Footer */
+
 footer {
   margin-top: 0rem;
 }
 
+/* Footer container spacing */
 .footer-container {
   margin: 0 auto;
   margin: 2rem 2rem;
 }
 
+/* Footer logo alignment */
 #logo-container {
   text-align: start; 
   margin-bottom: 2rem;
 }
 
+/* Footer logo size */
 .drc-logo {
   width: 12rem;     
   height: auto; 
-  display:block     
+  display: block;     
 }
 
+/* Footer link styling */
 .footer-container a,
 .footer-container a:visited,
 .footer-container a:active,
@@ -229,7 +253,7 @@ footer {
   text-decoration: underline;
 }
 
-/* Responsive */
+/* Responsive layout */
 
 @media (max-width: 800px) {
   .checkout-layout {
@@ -242,4 +266,3 @@ footer {
     max-width: 100%;
   }
 }
-

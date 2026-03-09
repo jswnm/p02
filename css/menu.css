@@ -1,8 +1,10 @@
+/* Page background and body spacing */
 body {
   margin: 0;
   background-color: #f2f0ef;
 }
 
+/* Fixed header with gradient fade */
 header {
   position: fixed;
   top: 0;
@@ -21,18 +23,20 @@ header {
   );
 }
 
+/* Paragraph styling */
 p {
   font-family: 'Simplon Mono', sans-serif;
   color: #003A6B;
   line-height: 1.8;
 }
 
+/* Heading styling */
 h1, h2 {
   color: #003A6B;
   font-family: "NeueMontreal", sans-serif;
 }
 
-/*navbar*/
+/* Navbar */
 .navbar {
   display: flex;
   align-items: center;
@@ -42,12 +46,14 @@ h1, h2 {
   padding-top: 0.5rem;
 }
 
+/* Navbar list items */
 .navbar ul li {
   list-style-type: none;
   display: inline-block;
   padding: 10px 20px;
 }
 
+/* Navbar links */
 .navbar ul li a {
   position: relative;
   color: #003a6b;
@@ -59,6 +65,7 @@ h1, h2 {
   letter-spacing: 0.1em;
 }
 
+/* Navbar underline animation */
 .navbar ul li a::after {
   content: "";
   position: absolute;
@@ -72,31 +79,36 @@ h1, h2 {
   transition: transform 0.5s ease;
 }
 
+/* Navbar hover color */
 .navbar ul li a:hover {
   color: #000000;
 }
 
+/* Navbar underline on hover */
 .navbar ul li a:hover::after {
   transform: scaleX(1);
 }
 
+/* Menu section spacing */
 .menu-section {
   margin: 14rem auto;
   padding: 0 1.5rem;
 }
 
+/* Menu container width */
 .menu-container {
   max-width: 800px;
   margin: 0 auto;
 }
 
-/* Title */
+/* Menu title */
 .menu-title {
   font-family: "NeueMontreal", sans-serif;
   font-size: 2.2rem;
   color: #002D68;
 }
 
+/* Menu intro text */
 .menu-intro {
   font-family: "Simplon Mono", sans-serif;
   font-size: 0.9rem;
@@ -108,13 +120,13 @@ h1, h2 {
   margin-top: -.5rem;
 }
 
-/* List */
+/* Menu list layout */
 .menu-list {
   display: flex;
   flex-direction: column;
 }
 
-/* Row */
+/* Menu row */
 .menu-row {
   padding: 0.9rem 0;
   border-bottom: 1px solid #003A6B;
@@ -122,6 +134,7 @@ h1, h2 {
   transition: padding 0.25s ease;
 }
 
+/* Top row layout */
 .menu-main {
   display: flex;
   justify-content: space-between;
@@ -129,6 +142,7 @@ h1, h2 {
   gap: 1.5rem;
 }
 
+/* Menu item name and price */
 .menu-name,
 .menu-price {
   font-family: "Simplon Mono", sans-serif;
@@ -137,6 +151,7 @@ h1, h2 {
   transition: color 0.2s ease;
 }
 
+/* Price and add section */
 .price-block {
   display: flex;
   flex-direction: column;
@@ -144,6 +159,7 @@ h1, h2 {
   gap: 0.15rem;
 }
 
+/* Add link styling */
 .menu-add {
   font-family: "Simplon Mono", sans-serif;
   font-size: .8rem;
@@ -153,12 +169,14 @@ h1, h2 {
   transition: color 0.2s ease, opacity 0.2s ease, text-decoration 0.2s ease;
 }
 
+/* Add link hover effect */
 .menu-add:hover {
   color: #000000;
   text-decoration: underline;
   opacity: 1;
 }
 
+/* Hidden item description */
 .menu-description {
   font-family: "Simplon Mono", sans-serif;
   font-size: 0.8rem;
@@ -175,7 +193,7 @@ h1, h2 {
     transform 0.2s ease;
 }
 
-/* Image */
+/* Hidden menu image */
 .menu-img {
   display: block;
   width: 5rem;
@@ -187,17 +205,19 @@ h1, h2 {
   transform: translateY(-10px);
 }
 
-/* Hover expand */
+/* Expand row on hover */
 .menu-row:hover {
   padding-bottom: 1.5rem;
 }
 
+/* Show description on hover */
 .menu-row:hover .menu-description {
   max-height: 55px;
   opacity: 1;
   transform: translateY(4px);
 }
 
+/* Show image on hover */
 .menu-row:hover .menu-img {
   max-height: 160px;
   opacity: 1;
@@ -205,12 +225,13 @@ h1, h2 {
   margin-top: 0.75rem;
 }
 
+/* Darken text on hover */
 .menu-row:hover .menu-name,
 .menu-row:hover .menu-price {
   color: #000000;
 }
 
-/* Responsive */
+/* Responsive menu styles */
 @media (max-width: 700px) {
   .menu-title {
     font-size: 1.8rem;
@@ -230,27 +251,31 @@ h1, h2 {
   }
 }
 
-/*footer*/
+/* Footer */
 footer {
   margin-top: 20rem;
 }
 
+/* Footer container spacing */
 .footer-container {
   margin: 0 auto;
   margin: 2rem 2rem;
 }
 
+/* Footer logo container */
 #logo-container {
   text-align: start; 
   margin-bottom: 2rem;
 }
 
+/* Footer logo size */
 .drc-logo {
   width: 8rem;      
   height: auto; 
-  display:block     
+  display: block;     
 }
 
+/* Footer link styling */
 .footer-container a,
 .footer-container a:visited,
 .footer-container a:active,
@@ -259,6 +284,7 @@ footer {
   text-decoration: underline;
 }
 
+/* Shared button style */
 .btn {
   display: inline-block;
   font-family: 'Simplon Mono', sans-serif;
@@ -273,10 +299,12 @@ footer {
   background-color: #f2f0ef;
 }
 
+/* Button hover effect */
 .btn:hover {
   transform: scale(1.05);
 }
 
+/* Purchase button alignment */
 .purchase-btn {
   display: block;
   width: fit-content;
@@ -284,32 +312,33 @@ footer {
   margin-top: 2rem;
 }
 
+/* Add controls layout */
 .add-block {
   display: flex;
   align-items: center;
   gap: 0.4rem;
 }
 
+/* Quantity input styling */
 .menu-qty {
   width: 2rem;
   font-family: "Simplon Mono", sans-serif;
   font-size: 0.75rem;
   color: #002D68;
-
   border: none;
   background: transparent;
-
   text-align: center;
   padding: 2px 2px;
-
   outline: none;
   transition: border-color 0.25s ease;
 }
 
+/* Quantity input focus */
 .menu-qty:focus {
   border-bottom: 1.5px solid #000000;
 }
 
+/* Quantity spinner styling */
 .menu-qty::-webkit-inner-spin-button {
   opacity: 0.7;
   height: 1.2rem;

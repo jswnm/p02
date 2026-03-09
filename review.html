@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Page metadata and stylesheet links -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DAY ROW</title>
@@ -8,7 +9,10 @@
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/review.css" />
   </head>
+
   <body>
+
+    <!-- Navigation bar -->
     <header>
       <nav class="navbar">
         <ul>
@@ -23,61 +27,80 @@
     </header>
 
     <main>
+
+      <!-- Contact and review section -->
       <section id="cx-signup" class="rewards">
+
+        <!-- Logo -->
         <section id="logo">
           <div id="logo-container">
             <img src="img/logo1.png" class="drc-logo" />
           </div>
         </section>
+
+        <!-- Contact information -->
         <h1 class="contact-heading">Contact</h1>
         <p>
           <strong>Address:</strong> 14-3 Itaewon-ro 49-gil, Seoul, South Korea
         </p>
         <p><strong>Phone:</strong> (604) 555-1234</p>
-        <section>
-            <hr>
-            <h1>Rate Us!</h1>
-            <p>Please leave a review down below</p>
 
-            <form class="rewards-form">
+        <!-- Review section -->
+        <section>
+          <hr>
+          <h1>Rate Us!</h1>
+          <p>Please leave a review down below</p>
+
+          <!-- Review form -->
+          <form class="rewards-form">
+
+            <!-- Name inputs -->
             <div class="input-row">
-                <div class="input-group">
+              <div class="input-group">
                 <label for="fname">First Name</label>
                 <input type="text" id="fname" placeholder="Enter your first name">
-                </div>
+              </div>
 
-                <div class="input-group">
+              <div class="input-group">
                 <label for="lname">Last Name</label>
                 <input type="text" id="lname" placeholder="Enter your last name">
-                </div>
+              </div>
             </div>
 
+            <!-- Email input -->
             <div class="input-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Enter your email">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Enter your email">
             </div>
 
+            <!-- Rating dropdown -->
             <div class="input-group">
-                <label for="rating">Rating</label>
-                <select id="rating" name="rating">
+              <label for="rating">Rating</label>
+              <select id="rating" name="rating">
                 <option value="" disabled selected>Select a rating</option>
                 <option value="5">5 — Excellent</option>
                 <option value="4">4 — Good</option>
                 <option value="3">3 — Okay</option>
                 <option value="2">2 — Poor</option>
                 <option value="1">1 — Very Poor</option>
-                </select>
+              </select>
             </div>
 
+            <!-- Comment textarea -->
             <div class="input-group">
-                <label for="feedback-comments">Comments</label>
-                <textarea id="feedback-comments" name="comments" placeholder="Tell us about your experience"></textarea>
+              <label for="feedback-comments">Comments</label>
+              <textarea id="feedback-comments" name="comments" placeholder="Tell us about your experience"></textarea>
             </div>
 
+            <!-- Submit button -->
             <button class="btn" type="submit">Submit</button>
-            </form>
+
+          </form>
+
         </section>
       </section>
+
     </main>
+
   </body>
 </html>

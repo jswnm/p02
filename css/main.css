@@ -1,11 +1,13 @@
 /* Style Guide */
 
+/* Universal box sizing */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+/* Page body styling */
 body {
   font-family: 'NeueMontreal', sans-serif;
   padding: 2rem;
@@ -26,6 +28,7 @@ h4 {
   margin-bottom: 0.5rem;
 }
 
+/* Paragraph styling */
 p {
   font-family: 'Simplon Mono', sans-serif;
   margin-top: 0;
@@ -34,10 +37,12 @@ p {
   color: #003A6B;
 }
 
+/* Ordered list styling */
 ol {
   color: #003A6B;
 }
 
+/* In-text link styling */
 .tlink{
   font-family: "Simplon Mono", sans-serif;
   text-decoration: none;
@@ -46,16 +51,19 @@ ol {
   transition: color 0.2s ease, opacity 0.2s ease, text-decoration 0.2s ease;
 }
 
+/* In-text link hover state */
 .tlink:hover {
   color: #000000;
   text-decoration: underline;
   opacity: 1;
 }
 
+/* Example heading styling */
 .example {
   color: #003A6B;
   font-family: "NeueMontreal", sans-serif;
 }
+
 /* Sections */
 
 .element {
@@ -63,14 +71,14 @@ ol {
   border-top: 0.15rem solid black;
 }
 
-/* content requirement boxes */
+/* Content requirement boxes */
 #content_requirements > section {
   padding: 2rem;
   margin-bottom: 3rem;
   border-radius: 8px;
 }
 
-/* list item boxes */
+/* Content requirement lists */
 #content_requirements ul,
 #content_requirements ol {
   list-style: none;
@@ -78,6 +86,7 @@ ol {
   text-align: center;
 }
 
+/* Content requirement list items */
 #content_requirements li {
   border: 2px solid #003A6B;
   background-color: #fff;
@@ -88,7 +97,7 @@ ol {
   color: #003A6B;
 }
 
-/*navbar*/
+/* Navbar */
 
 .navbar {
   display: flex;
@@ -99,12 +108,14 @@ ol {
   padding-top: 0.5rem;
 }
 
+/* Navbar list items */
 .navbar ul li {
   list-style-type: none;
   display: inline-block;
   padding: 10px 20px;
 }
 
+/* Navbar links */
 .navbar ul li a {
   position: relative;
   color: #003a6b;
@@ -116,6 +127,7 @@ ol {
   letter-spacing: 0.1em;
 }
 
+/* Navbar underline animation */
 .navbar ul li a::after {
   content: "";
   position: absolute;
@@ -129,10 +141,12 @@ ol {
   transition: transform 0.5s ease;
 }
 
+/* Navbar hover color */
 .navbar ul li a:hover {
   color: #000000;
 }
 
+/* Navbar underline hover state */
 .navbar ul li a:hover::after {
   transform: scaleX(1);
 }
@@ -151,6 +165,7 @@ ol {
   background-color: #f2f0ef;
 }
 
+/* Button hover effect */
 .btn:hover {
   transform: scale(1.05);
   background-color: #f2f0ef;
@@ -166,7 +181,7 @@ label {
   margin-bottom: 0.4rem;
 }
 
-/* all form fields */
+/* Shared input, select, and textarea styles */
 .input-group input,
 .input-group select,
 .input-group textarea {
@@ -181,7 +196,7 @@ label {
   transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
-/* inputs + select */
+/* Text inputs and select menus */
 input[type="text"],
 input[type="email"],
 select {
@@ -196,6 +211,7 @@ select {
   color: #003A6B;
 }
 
+/* Contact heading */
 #contact h3 {
   font-family: "NeueMontreal", sans-serif;
   font-style: normal;
@@ -203,6 +219,7 @@ select {
   margin-bottom: 0.75rem;
 }
 
+/* Contact paragraph styling */
 #contact p {
   font-family: "Simplon Mono", sans-serif;
   color: #003A6B;
@@ -210,6 +227,7 @@ select {
   margin-bottom: 2rem;
 }
 
+/* Contact links */
 #contact p a,
 #contact p a:visited,
 #contact p a:active,
@@ -218,6 +236,7 @@ select {
   text-decoration: underline;
 }
 
+/* Contact form layout */
 #contact-form {
   display: flex;
   flex-direction: column;
@@ -225,6 +244,7 @@ select {
   max-width: 700px;
 }
 
+/* Contact form labels */
 #contact-form label {
   display: block;
   font-family: "NeueMontreal", sans-serif;
@@ -234,6 +254,7 @@ select {
   margin-bottom: 0.6rem;
 }
 
+/* Contact form inputs and textarea */
 #contact-form input,
 #contact-form textarea {
   width: 100%;
@@ -246,7 +267,7 @@ select {
   box-sizing: border-box;
 }
 
-/* text inputs */
+/* Contact text inputs */
 #contact-form input {
   border-bottom: 2px solid #003A6B;
   padding: 0.7rem 0;
@@ -254,7 +275,7 @@ select {
   transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
-/* message box */
+/* Contact message box */
 #contact-form textarea {
   min-height: 120px;
   resize: vertical;
@@ -267,15 +288,17 @@ select {
   transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
+/* Contact input focus state */
 #contact-form input:focus {
   border-bottom: 2px solid #000000;
 }
 
+/* Contact textarea focus state */
 #contact-form textarea:focus {
   border: 2px solid #000000;
 }
 
-/* button */
+/* Contact form button */
 #contact-form .btn {
   font-family: "Simplon Mono", sans-serif;
   padding: 8px 20px;
@@ -287,16 +310,19 @@ select {
   width: fit-content;
 }
 
+/* Contact form button hover */
 #contact-form .btn:hover {
   transform: scale(1.05);
 }
 
 /* Radio */
+
 *:after,
 *:before{
   box-sizing: border-box;
 }
 
+/* Radio group heading */
 .meal-option {
   margin-left: 10px;
   font-family: 'NeueMontreal', sans-serif;
@@ -304,6 +330,7 @@ select {
   color:#1a2054
 }
 
+/* Shared container layout */
 .container{
   height: 200px;
   display: flex;
@@ -311,10 +338,12 @@ select {
   justify-content: center;
 }
 
+/* Hide default radio buttons */
 input[type="radio"]{
   display: none;
 }
 
+/* Radio labels */
 label{
   display: block;
   cursor: pointer;
@@ -322,6 +351,7 @@ label{
   margin-bottom: 10px;
 }
 
+/* Radio label text container */
 label span{
   display: inline-flex;
   align-items: center;
@@ -330,11 +360,13 @@ label span{
   transition: .25s ease;
 }
 
+/* Radio hover and checked background */
 label span:hover,
 input[type="radio"]:checked + span{
   background-color: #fff;
 }
 
+/* Custom radio circle */
 label span:before{
   content: "";
   background-color: #fff;
@@ -346,11 +378,12 @@ label span:before{
   box-shadow:  inset 0 0 0 2px #1a2054;
 }
 
+/* Checked radio circle fill */
 input[type="radio"]:checked + span:before{
   box-shadow: inset 0 0 0 10px #1a2054;
 }
 
-/* textarea */
+/* Textarea styling */
 textarea {
   height: 160px;
   resize: none;
@@ -360,7 +393,7 @@ textarea {
   background-color: #fff;
 }
 
-/* focus state */
+/* Shared focus state */
 input:focus,
 select:focus,
 textarea:focus {
@@ -378,6 +411,7 @@ textarea:focus {
   border: 2px solid #003A6B;
 }
 
+/* Feedback form heading */
 #feedback-form h3 {
   margin-bottom: 3rem;
 }
@@ -402,13 +436,14 @@ textarea:focus {
   margin: 0 auto;
 }
 
+/* Checkout column sizing */
 .checkout-layout > .checkout-container,
 .checkout-layout > .payment-container {
   flex: 0 0 48%;
   max-width: 500px;
 }
 
-/* stack on small screens */
+/* Stack on small screens */
 @media (max-width: 800px) {
   .checkout-layout {
     flex-wrap: wrap;
@@ -420,17 +455,19 @@ textarea:focus {
   }
 }
 
-/* IMAGES */
+/* Images */
 
 .hero-img {
   max-width: 500px;
   transition: transform 0.3s ease;
 }
 
+/* Hero image hover effect */
 .hero-img:hover {
   transform: scale(1.05);
 }
 
+/* Product page layout */
 .product-page {
   display: flex;
   justify-content: center;
@@ -439,45 +476,48 @@ textarea:focus {
   flex-wrap: wrap; 
 }
 
-
-/* Button */
-
+/* Navigation link hover reset */
 nav a:hover, nav a:focus {
   text-decoration: none;
 }
 
+/* Code block styling */
 code {
   background-color: #EEE;
   padding: 0.5rem;
   display: block;
 }
 
-/*customer form */
+/* Customer form */
+
 .order-detail {
   color:#1a2054;
   font-family: 'NeueMontreal', sans-serif;
   font-weight: bold;
 }
 
+/* Form box width */
 .form-box{
   min-width: 500px;
   margin: 0 auto;
 }
 
+/* Container width and padding */
 .container {
   max-width: 500px;
   margin: 0 auto;
   padding: 5%;
 }
 
+/* Form layout */
 form {
   max-width: none;
   margin: 0 auto;
   text-align: left;
   padding: 20px 0;
-
 }
 
+/* Shared label styling */
 label {
   font-family: 'NeueMontreal', sans-serif;
   font-weight: bold;
@@ -485,10 +525,12 @@ label {
   margin-bottom: 0.5rem;
 }
 
+/* Shared input font */
 input {
   font-family: 'Simplon Mono', sans-serif;
 }
 
+/* Shared input field styling */
 input{
   display: block;
   margin: 0 auto;
@@ -499,7 +541,7 @@ input{
   outline: none;
 }
 
-/*payment form*/
+/* Payment form */
 
 .payment-container {
   max-width: 500px;
@@ -510,13 +552,14 @@ input{
   justify-content: center;
 }
 
+/* Payment box width */
 .payment-box {
   width: 100%;
   max-width: 500px;
   margin: 0 auto;
-
 }
 
+/* Payment title styling */
 .payment-title {
   color: #1a2054;
   font-family: 'NeueMontreal', sans-serif;
@@ -524,23 +567,27 @@ input{
   font-style: normal;
 }
 
+/* Menu section */
+
 .menu-section {
   margin: 14rem auto;
   padding: 0 1.5rem;
 }
 
+/* Menu container */
 .menu-container {
   max-width: 800px;
   margin: 0 auto;
 }
 
-/* Title */
+/* Menu title */
 .menu-title {
   font-family: "NeueMontreal", sans-serif;
   font-size: 2.2rem;
   color: #002D68;
 }
 
+/* Menu intro text */
 .menu-intro {
   font-family: "Simplon Mono", sans-serif;
   font-size: 0.9rem;
@@ -552,13 +599,13 @@ input{
   margin-top: -.5rem;
 }
 
-/* List */
+/* Menu list */
 .menu-list {
   display: flex;
   flex-direction: column;
 }
 
-/* Row */
+/* Menu row */
 .menu-row {
   padding: 0.9rem 0;
   border-bottom: 1px solid #003A6B;
@@ -566,6 +613,7 @@ input{
   transition: padding 0.25s ease;
 }
 
+/* Menu row top section */
 .menu-main {
   display: flex;
   justify-content: space-between;
@@ -573,6 +621,7 @@ input{
   gap: 1.5rem;
 }
 
+/* Menu item name and price */
 .menu-name,
 .menu-price {
   font-family: "Simplon Mono", sans-serif;
@@ -581,6 +630,7 @@ input{
   transition: color 0.2s ease;
 }
 
+/* Price and add block layout */
 .price-block {
   display: flex;
   flex-direction: column;
@@ -588,6 +638,7 @@ input{
   gap: 0.15rem;
 }
 
+/* Add link styling */
 .menu-add {
   font-family: "Simplon Mono", sans-serif;
   font-size: .8rem;
@@ -597,12 +648,14 @@ input{
   transition: color 0.2s ease, opacity 0.2s ease, text-decoration 0.2s ease;
 }
 
+/* Add link hover effect */
 .menu-add:hover {
   color: #000000;
   text-decoration: underline;
   opacity: 1;
 }
 
+/* Hidden menu description */
 .menu-description {
   font-family: "Simplon Mono", sans-serif;
   font-size: 0.8rem;
@@ -619,7 +672,7 @@ input{
     transform 0.2s ease;
 }
 
-/* Image */
+/* Menu image */
 .menu-img {
   display: block;
   width: 5rem;
@@ -631,17 +684,19 @@ input{
   transform: translateY(-10px);
 }
 
-/* Hover expand */
+/* Menu hover expand */
 .menu-row:hover {
   padding-bottom: 1.5rem;
 }
 
+/* Show description on hover */
 .menu-row:hover .menu-description {
   max-height: 55px;
   opacity: 1;
   transform: translateY(4px);
 }
 
+/* Show image on hover */
 .menu-row:hover .menu-img {
   max-height: 160px;
   opacity: 1;
@@ -649,12 +704,13 @@ input{
   margin-top: 0.75rem;
 }
 
+/* Darken name and price on hover */
 .menu-row:hover .menu-name,
 .menu-row:hover .menu-price {
   color: #000000;
 }
 
-/* Responsive */
+/* Responsive menu styles */
 @media (max-width: 700px) {
   .menu-title {
     font-size: 1.8rem;
@@ -673,6 +729,48 @@ input{
     width: 100px;
   }
 }
+
+/* Purchase button alignment */
+.purchase-btn {
+  display: block;
+  width: fit-content;
+  margin-right: auto;
+  margin-top: 2rem;
+}
+
+/* Add controls layout */
+.add-block {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* Quantity input styling */
+.menu-qty {
+  width: 2rem;
+  font-family: "Simplon Mono", sans-serif;
+  font-size: 0.75rem;
+  color: #002D68;
+  border: none;
+  background: transparent;
+  text-align: center;
+  padding: 2px 2px;
+  outline: none;
+  transition: border-color 0.25s ease;
+}
+
+/* Quantity input focus */
+.menu-qty:focus {
+  border-bottom: 1.5px solid #000000;
+}
+
+/* Quantity spinner styling */
+.menu-qty::-webkit-inner-spin-button {
+  opacity: 0.7;
+  height: 1.2rem;
+}
+
+/* Rewards section */
 .rewards {
   max-width: 700px;
   margin: 14rem auto;
@@ -680,20 +778,23 @@ input{
   color: #003A6B;
 }
 
+/* Rewards heading */
 .rewards h1 {
   font-size: 2.5rem;
   margin-bottom: 0.75rem;
 }
 
+/* Rewards paragraph */
 .rewards p {
   margin-bottom: 2.5rem;
 }
 
+/* Rewards button spacing */
 .rewards .btn {
   margin-top: 2.5rem;
 }
 
-/* feedback */
+/* Feedback section */
 #feedback.rewards {
   max-width: 700px;
   margin: 14rem auto;
@@ -701,6 +802,7 @@ input{
   color: #003A6B;
 }
 
+/* Feedback heading */
 #feedback.rewards h1 {
   font-size: 2.5rem;
   margin: 0 0 0.75rem 0;
@@ -708,6 +810,7 @@ input{
   color: #003A6B;
 }
 
+/* Feedback paragraph */
 #feedback.rewards p {
   margin: 0 0 2.5rem 0;
   font-family: "Simplon Mono", sans-serif;
@@ -715,18 +818,21 @@ input{
   line-height: 1.8;
 }
 
+/* Feedback form layout */
 #feedback .rewards-form {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
+/* Feedback input row */
 #feedback .input-row {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
 }
 
+/* Feedback input group */
 #feedback .input-group {
   flex: 1 1 0;
   display: flex;
@@ -734,6 +840,7 @@ input{
   margin-bottom: 1.5rem;
 }
 
+/* Feedback labels */
 #feedback .input-group label {
   font-family: "NeueMontreal", sans-serif;
   font-weight: bold;
@@ -742,6 +849,7 @@ input{
   color: #003A6B;
 }
 
+/* Feedback input fields */
 #feedback .input-group input,
 #feedback .input-group select,
 #feedback .input-group textarea {
@@ -759,6 +867,7 @@ input{
   box-sizing: border-box;
 }
 
+/* Feedback custom select arrow */
 #feedback .input-group select {
   appearance: none;
   -webkit-appearance: none;
@@ -773,6 +882,7 @@ input{
   background-repeat: no-repeat;
 }
 
+/* Feedback textarea */
 #feedback .input-group textarea {
   min-height: 120px;
   resize: vertical;
@@ -783,32 +893,38 @@ input{
   line-height: 1.6;
 }
 
+/* Feedback input focus */
 #feedback .input-group input:focus,
 #feedback .input-group select:focus {
   border-bottom: 2px solid #000000;
 }
 
+/* Feedback textarea focus */
 #feedback .input-group textarea:focus {
   border: 2px solid #000000;
 }
 
+/* Feedback placeholder styling */
 #feedback .input-group input::placeholder,
 #feedback .input-group textarea::placeholder {
   color: rgba(0, 58, 107, 0.6);
 }
 
+/* Feedback button */
 #feedback .btn {
   margin-top: 2.5rem;
   padding: 8px 20px;
   width: fit-content;
 }
 
+/* Montreal font example */
 .montreal-font {
   font-family: "NeueMontreal", sans-serif;
   font-size: 1.5rem;
   letter-spacing: 0.05em;
 }
 
+/* Simplon Mono font example */
 .simplon-font {
   font-family: 'Simplon Mono', sans-serif;
   font-size: 1.3rem;

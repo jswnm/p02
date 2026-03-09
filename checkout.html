@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Page metadata and resource links -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DAY ROW</title>
-    <link rel="icon" type="image/png" href="img/icon.jpg" />
-    <link rel="stylesheet" href="css/checkout.css">
-    <link rel="stylesheet" href="css/fonts.css">
+  <link rel="icon" type="image/png" href="img/icon.jpg" />
+  <link rel="stylesheet" href="css/checkout.css">
+  <link rel="stylesheet" href="css/fonts.css">
 </head>
 
 <body class="checkout-page">
+
+  <!-- Navigation bar -->
   <header>
     <nav class="navbar">
       <ul>
@@ -23,15 +26,18 @@
     </nav>
   </header>
 
+  <!-- Main checkout section -->
   <main class="checkout-cart">
     <section class="checkout-wrap">
       <div class="checkout-page-container"> 
 
+      <!-- Checkout page title and description -->
       <div class="checkout-intro">
         <h1>Checkout</h1>
         <p>Purchase and enjoy your coffee!</p>
       </div>
 
+      <!-- Layout container for order summary and payment -->
       <section class="checkout-layout">
 
         <!-- Order summary -->
@@ -43,12 +49,15 @@
           <p><strong>Order Total: $2</strong></p>
         </div>
         
-
         <!-- Payment form -->
         <div class="payment-container">
           <div class="payment-box">
+
+            <!-- Payment section title -->
             <h3>Payment</h3>
             <hr class="paymentform-line">
+
+            <!-- Credit card input form -->
             <form class="payment-form">
               <label for="cname">Name on Card</label>
               <input type="text" id="cname" placeholder="Name">
@@ -62,6 +71,7 @@
               <label for="cvv">CVV</label>
               <input type="text" id="cvv" placeholder="XXX">
 
+              <!-- Purchase button -->
               <button class="btn" type="submit">Purchase</button>
             </form>
 
@@ -73,32 +83,36 @@
     </section>
   </main>
 
+  <!-- Footer -->
   <footer id="footer">
-      <div class="footer-container">
-        <hr/>
-        <section id="logo">
-          <div id="logo-container">
-            <img src="img/logo3.png" class="drc-logo">
-          </div>
-        </section>
-        <p>
-          <strong>Address:</strong> 14-3 Itaewon-ro 49-gil, Seoul, South Korea
-        </p>
-        <p><strong>Phone:</strong> (604) 555-1234</p>
-        <p><strong>Hours:</strong> 11am to 9pm</p>
-        <a href="style.html">
-          <p>Style Guide</p>
-        </a>
+    <div class="footer-container">
+      <hr/>
 
-        <a href="style.html#citations">
-          <p>Citations</p>
-        </a>
+      <section id="logo">
+        <div id="logo-container">
+          <img src="img/logo3.png" class="drc-logo">
+        </div>
+      </section>
 
-        <a href="https://github.com/jswnm/p02">
-          <p>GitHub</p>
-        </a>
-      </div>
-    </footer>
+      <p>
+        <strong>Address:</strong> 14-3 Itaewon-ro 49-gil, Seoul, South Korea
+      </p>
+      <p><strong>Phone:</strong> (604) 555-1234</p>
+      <p><strong>Hours:</strong> 11am to 9pm</p>
+
+      <a href="style.html">
+        <p>Style Guide</p>
+      </a>
+
+      <a href="style.html#citations">
+        <p>Citations</p>
+      </a>
+
+      <a href="https://github.com/jswnm/p02">
+        <p>GitHub</p>
+      </a>
+    </div>
+  </footer>
 
 </body>
 </html>

@@ -1,9 +1,10 @@
-
+/* Page background and body spacing */
 body {
   margin: 0;
   background-color: #f2f0ef;
 }
 
+/* Fixed header with gradient fade */
 header {
   position: fixed;
   top: 0;
@@ -22,18 +23,20 @@ header {
   );
 }
 
+/* Paragraph styling */
 p {
   font-family: 'Simplon Mono', sans-serif;
   color: #003A6B;
   line-height: 1.8;
 }
 
+/* Heading styling */
 h1, h2 {
   color: #003A6B;
   font-family: "NeueMontreal", sans-serif;
 }
 
-/*navbar*/
+/* Navbar */
 .navbar {
   display: flex;
   align-items: center;
@@ -43,12 +46,14 @@ h1, h2 {
   padding-top: 0.5rem;
 }
 
+/* Navbar list items */
 .navbar ul li {
   list-style-type: none;
   display: inline-block;
   padding: 10px 20px;
 }
 
+/* Navbar links */
 .navbar ul li a {
   position: relative;
   color: #003a6b;
@@ -60,6 +65,7 @@ h1, h2 {
   letter-spacing: 0.1em;
 }
 
+/* Navbar underline animation */
 .navbar ul li a::after {
   content: "";
   position: absolute;
@@ -73,37 +79,41 @@ h1, h2 {
   transition: transform 0.5s ease;
 }
 
+/* Navbar hover color */
 .navbar ul li a:hover {
   color: #000000;
 }
 
+/* Navbar underline on hover */
 .navbar ul li a:hover::after {
   transform: scaleX(1);
 }
 
-
-/*footer*/
+/* Footer */
 footer {
   margin-top: 22rem;
 }
 
+/* Footer container spacing */
 .footer-container {
   margin: 0 auto;
   margin: 2rem 2rem;
 }
 
+/* Footer logo container */
 #logo-container {
   text-align: start; 
   margin-bottom: 2rem;
-
 }
 
+/* Footer logo size */
 .drc-logo {
   width: 15rem;      
   height: auto; 
-  display:block     
+  display: block;     
 }
 
+/* Footer link styling */
 .footer-container a,
 .footer-container a:visited,
 .footer-container a:active,
@@ -112,7 +122,7 @@ footer {
   text-decoration: underline;
 }
 
-/*rewards*/
+/* Rewards section */
 .rewards {
   max-width: 700px;
   margin: 14rem auto;
@@ -120,21 +130,25 @@ footer {
   color: #003A6B;
 }
 
+/* Rewards heading */
 .rewards h1 {
   font-size: 2.5rem;
   margin-bottom: 0.75rem;
 }
 
+/* Rewards paragraph */
 .rewards p {
   margin-bottom: 2.5rem;
 }
 
+/* Input row layout */
 .input-row {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
 }
 
+/* Input group container */
 .input-group {
   flex: 1 1 250px;
   display: flex;
@@ -142,12 +156,14 @@ footer {
   margin-bottom: 2rem;
 }
 
+/* Input labels */
 .input-group label {
   font-family: "NeueMontreal", sans-serif;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
+/* Input field styling */
 .input-group input {
   border: none;
   border-bottom: 2px solid #003A6B;
@@ -159,11 +175,12 @@ footer {
   outline: none;
 }
 
+/* Input focus state */
 .input-group input:focus {
   border-bottom: 2px solid #000000;
 }
 
-/*button*/
+/* Button */
 .btn {
   font-family: 'Simplon Mono', sans-serif;
   padding: 5px 20px;
@@ -176,6 +193,7 @@ footer {
   background-color: #f2f0ef;
 }
 
+/* Button hover effect */
 .btn:hover {
   transform: scale(1.05);
   background-color: #f2f0ef;

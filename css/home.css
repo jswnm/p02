@@ -1,8 +1,10 @@
+/* Page background and default body spacing */
 body {
   margin: 0;
   background-color: #f2f0ef;
 }
 
+/* Fixed header with soft fade effect */
 header {
   position: fixed;
   top: 0;
@@ -21,18 +23,20 @@ header {
   );
 }
 
+/* Paragraph styling */
 p {
   font-family: 'Simplon Mono', sans-serif;
   color: #002D68;
   line-height: 1.8;
 }
 
+/* Main heading styling */
 h1, h2 {
   color: #002D68;
   font-family: "NeueMontreal", sans-serif;
 }
 
-/*navbar*/
+/* Navbar */
 .navbar {
   display: flex;
   align-items: center;
@@ -42,12 +46,14 @@ h1, h2 {
   padding-top: 0.5rem;
 }
 
+/* Navbar list items */
 .navbar ul li {
   list-style-type: none;
   display: inline-block;
   padding: 10px 20px;
 }
 
+/* Navbar links */
 .navbar ul li a {
   position: relative;
   color: #003a6b;
@@ -59,6 +65,7 @@ h1, h2 {
   letter-spacing: 0.1em;
 }
 
+/* Animated underline for navbar links */
 .navbar ul li a::after {
   content: "";
   position: absolute;
@@ -72,15 +79,17 @@ h1, h2 {
   transition: transform 0.5s ease;
 }
 
+/* Navbar hover color */
 .navbar ul li a:hover {
   color: #000000;
 }
 
+/* Navbar underline on hover */
 .navbar ul li a:hover::after {
   transform: scaleX(1);
 }
 
-/*hero*/
+/* Hero section */
 .hero {
   width: auto;
   min-height: 100vh;
@@ -94,6 +103,7 @@ h1, h2 {
   margin-top: 8rem;
 }
 
+/* Hero image positioning */
 .hero-img {
   position: absolute;
   inset: 0;
@@ -102,29 +112,32 @@ h1, h2 {
   object-fit: cover;
 }
 
+/* Hero text container */
 .hero-text {
   position: absolute;
   top: 25%;
   left: 10%;                
   transform: translateY(-50%); 
   z-index: 2;
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;   
   text-align: left;           
 }
 
+/* Hero heading */
 .hero-text h1 {
   font-family: 'NeueMontreal', sans-serif;
   color: #002D68;
   font-size: 4rem;
 }
 
+/* Hero paragraph width */
 .hero-text p {
   width: min(55ch, 90vw);     
 }
 
+/* About section */
 #about {
   max-width: 800px; 
   padding: 2rem 1rem;     
@@ -134,22 +147,26 @@ h1, h2 {
   margin-bottom: 7rem; 
 }
 
+/* About heading */
 #about h1 {
   font-family: "NeueMontreal", sans-serif;
   font-size: 2.5rem;
   margin-bottom: 2rem;
 }
 
+/* About paragraph */
 #about p {
   font-family: "Simplon Mono", sans-serif;
   font-size: 1rem;
   line-height: 1.8;
 }
 
+/* Story section */
 #story {
   padding: 3rem 1rem;
 }
 
+/* Story layout container */
 .story-container {
   display: flex;
   align-items: center;
@@ -157,14 +174,15 @@ h1, h2 {
   gap: 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
-
   flex-wrap: wrap; 
 }
 
+/* Story image container */
 #story-image {
   flex: 1.2; 
 }
 
+/* Cafe image styling */
 .cafe-img {
   width: 600px;
   height: 100%; 
@@ -173,42 +191,48 @@ h1, h2 {
   display: block;
 }
 
+/* Story text container */
 #story-para {
   flex: 1;
 }
 
+/* Story heading */
 #story-para h1 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
 }
 
+/* Story paragraph */
 #story-para p {
   line-height: 1.8;
   font-size: 1rem;
 }
 
-/*footer*/
+/* Footer */
 footer {
   margin-top: 9rem;
 }
 
+/* Footer container spacing */
 .footer-container {
   margin: 0 auto;
   margin: 2rem 2rem;
 }
 
+/* Footer logo container */
 #logo-container {
   text-align: start; 
   margin-bottom: 2rem;
-  
 }
 
+/* Footer logo size */
 .drc-logo {
   width: 16rem;      
   height: auto; 
-  display:block     
+  display: block;     
 }
 
+/* Footer link styling */
 .footer-container a,
 .footer-container a:visited,
 .footer-container a:active,
@@ -216,5 +240,3 @@ footer {
   color: #002D68;
   text-decoration: underline;
 }
-
-
