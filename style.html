@@ -34,25 +34,31 @@
         <h3>In-text link</h3>
         <!--In-text link example, I just wanted to learn more how I could utilize the in-text link in different way and found nav bar-->
         <p>
-          You can view <a href="menu.html">our menu</a> for today's offering.
+          You can view <a href="menu.html" class="tlink">our menu</a> for today's offering.
         </p>
 
         <h4>HTML:</h4>
         <code>
-          &lt;p&gt;You can view &gt;a href="menu.html"&gt;our menu&gt;/a&gt; for
-          today's offering.&gt;/p&gt;
+        &lt;p&gt; <br>
+          You can view &lt;a href="menu.html" class="tlink">our menu&lt;/a> for today's offering. <br>
+        &lt;/p>
         </code>
 
         <h4>CSS:</h4>
         <code>
-          a { <br>
-          color:#1a2054; <br>
-          } <br>
+.tlink{ <br>
+  font-family: "Simplon Mono", sans-serif; <br>
+  text-decoration: none; <br>
+  color: #002D68; <br>
+  opacity: 0.7; <br>
+  transition: color 0.2s ease, opacity 0.2s ease, text-decoration 0.2s ease; <br>
+} <br>
 
-          a:hover, a:focus{ <br>
-          color: #003A6B; <br>
-          text-decoration: none; <br>
-          }
+.tlink:hover { <br>
+  color: #000000; <br>
+  text-decoration: underline; <br>
+  opacity: 1; <br>
+}
         </code>
       </section>
 
@@ -83,24 +89,22 @@
 
         <h4>CSS:</h4>
         <code>
-          .btn { font-family: 'NeueMontreal';  <br>
-            font-weight: normal;  <br>
-            font-size: large;  <br>
-            margin: 100px;  <br>
-            padding: 15px 45px;  <br>
-            border: 3px solid #A62C2C; <br>
-            background: none;  <br>
-            outline: none;  <br>
-            color: #1a2054;  <br>
-            position: relative; <br>
-            z-index: 0;  <br>
-            border-radius: 12px;  <br>
-            transition: transform 0.3s ease;  <br>
-          } <br>
-          .btn:hover {  <br>
-            transform: scale(1.05);  <br>
-            background-color: #b4b4b4;  <br>
-          }
+.btn { <br>
+  font-family: 'Simplon Mono', sans-serif; <br>
+  padding: 5px 20px; <br>
+  border: 2px solid #003A6B; <br>
+  background: none; <br>
+  color: #003A6B; <br>
+  border-radius: 6px; <br>
+  cursor: pointer; <br>
+  transition: transform 0.3s ease, background-color 0.3s ease; <br>
+  background-color: #f2f0ef; <br>
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background-color: #f2f0ef;
+}
         </code>
       </section>
 
@@ -158,51 +162,19 @@
         </code>
 
         <h4>CSS:</h4>
-        <code>.order-detail { <br>
-  color:##1a2054; <br>
-  font-family: 'NeueMontreal'; <br>
-  font-weight: bold; <br>
-} <br>
-
-.form-box{ <br>
-  min-width: 500px; <br>
-  margin: 0 auto; <br>
-} <br>
-
-.container { <br>
-  max-width: 500px; <br>
-  margin: 0 auto; <br>
-  padding: 5%; <br>
-} <br>
-
-form { <br>
-  max-width: none;<br>
-  margin: 0 auto; <br>
-  text-align: left; <br>
-  padding: 20px 0; <br>
-
-} <br>
-
-label { <br>
-  font-family: 'NeueMontreal'; <br>
-  font-weight: bold; <br>
-  color:#1a2054; <br>
-  margin-bottom: 5rem; <br>
-}<br>
-
-input { <br>
-  font-family: 'Simplon Mono'; <br>
-}
-
-input{ <br>
-  display: block; <br>
-  margin: 0 auto; <br>
-  width: 100%; <br>
+        <code> .input-group input, <br>
+.input-group select, <br>
+.input-group textarea { <br>
+  border: none; <br>
+  border-bottom: 2px solid #003A6B; <br>
   background: transparent; <br>
-  border: 0; <br>
-  border-bottom: 2px solid #1a2054; <br>
+  padding: 0.7rem 0; <br>
+  font-family: "Simplon Mono", sans-serif; <br>
+  font-size: 1rem; <br>
+  color: #003A6B; <br>
   outline: none; <br>
-} <br>
+  transition: border-color 0.3s ease, background-color 0.3s ease; <br>
+}
  </code>
       </section>
 
@@ -372,10 +344,9 @@ input[type="radio"]:checked + span:before{ <br>
         </code>
         <h4>CSS:</h4>
         <code>
-          .example {  <br >
-            font-style: normal; <br >
-            color:#1a2054; <br />
-          }
+          .example { <br>
+  color: #003A6B; <br>
+  font-family: "NeueMontreal", sans-serif; <br>
         </code>
       </section>
 
@@ -486,32 +457,52 @@ input[type="radio"]:checked + span:before{ <br>
         </code>
         <h4>CSS:</h4>
         <code>
-          .navbar { <br >
-  display: flex; <br >
-  align-items: center; <br >
-  justify-content: space-between; <br>
-  padding-top: 40px; <br >
-  padding-left: 10%; <br >
-  padding-right: 10%; <br >
-} <br >
-
-.navbar ul li { <br >
-  list-style-type: none; <br >
-  display: inline-block; <br >
-  padding: 10px 20px;  <br >
-} <br >
-
-.navbar ul li a { <br >
-  color:#A62C2C; <br>
-  font-family: 'NeueMontreal'; <br >
-  font-weight: bold;  <br >
-  text-decoration: none; <br >
-} <br >
-
-.navbar ul li a:hover { <br >
-  color:#003A6B; <br >
-  transition: .3s;<br >
-} <br >
+.navbar { <br>
+  display: flex; <br>
+  align-items: center; <br>
+  justify-content: center; <br>
+  padding-left: 10%; <br>
+  padding-right: 10%; <br>
+  padding-top: 0.5rem; <br>
+} <br>
+ <br>
+.navbar ul li { <br>
+  list-style-type: none; <br>
+  display: inline-block; <br>
+  padding: 10px 20px; <br>
+} <br>
+ <br>
+.navbar ul li a { <br>
+  position: relative; <br>
+  color: #003a6b; <br>
+  font-family: "NeueMontreal", sans-serif; <br>
+  font-style: normal; <br>
+  font-weight: bold; <br>
+  text-decoration: none; <br>
+  font-size: 1rem; <br>
+  letter-spacing: 0.1em; <br>
+} <br>
+ <br>
+.navbar ul li a::after { <br>
+  content: ""; <br>
+  position: absolute; <br>
+  left: 0; <br>
+  bottom: -4px; <br>
+  width: 100%; <br>
+  height: 2px; <br>
+  background-color: #000000; <br>
+  transform: scaleX(0); <br>
+  transform-origin: left; <br>
+  transition: transform 0.5s ease; <br>
+} <br>
+ <br>
+.navbar ul li a:hover { <br>
+  color: #000000; <br>
+} <br>
+ <br>
+.navbar ul li a:hover::after { <br>
+  transform: scaleX(1); <br>
+} <br>
         </code>
       </section>
 
@@ -736,7 +727,7 @@ input[type="radio"]:checked + span:before{ <br>
 
       <h2>Contact</h2>
       <section id="contact">
-        <h3>Contact us!</h3>
+        <h1>Contact us!</h1>
         <p>
           14-3 Itaewon-ro 49-gil, Seoul, South Korea<br>
           Phone: <a href="tel:+16045551234">(604) 555-1234</a><br>
@@ -784,138 +775,406 @@ input[type="radio"]:checked + span:before{ <br>
 
       <h4>CSS:</h4>
       <pre><code>
-        input[type="text"],
-        input[type="email"],
-        select,
-        textarea {
-          width: 100%;
-          font-family: 'Simplon Mono', sans-serif;
-          color: #003A6B;
-          border: 2px solid #003A6B;
-          background: transparent;
-          border-radius: 6px;
-          margin-bottom: 1.5rem;
-        }
-
-        /* inputs + select */
-        input[type="text"],
-        input[type="email"],
-        select {
-          background-color: #fff;
-          height: 44px;
-          padding: 0.6rem 0.75rem;
-        }
+#contact { <br>
+  max-width: 700px; <br>
+  color: #003A6B; <br>
+} <br>
+ <br>
+#contact h3 { <br>
+  font-family: "NeueMontreal", sans-serif; <br>
+  font-style: normal; <br>
+  color: #003A6B; <br>
+  margin-bottom: 0.75rem; <br>
+} <br>
+ <br>
+#contact p { <br>
+  font-family: "Simplon Mono", sans-serif; <br>
+  color: #003A6B; <br>
+  line-height: 1.8; <br>
+  margin-bottom: 2rem; <br>
+} <br>
+ <br>
+#contact p a, <br>
+#contact p a:visited, <br>
+#contact p a:active, <br>
+#contact p a:focus { <br>
+  color: #003A6B; <br>
+  text-decoration: underline; <br>
+} <br>
+ <br>
+#contact-form { <br>
+  display: flex; <br>
+  flex-direction: column; <br>
+  gap: 0.5rem; <br>
+  max-width: 700px; <br>
+} <br>
+ <br>
+#contact-form label { <br>
+  display: block; <br>
+  font-family: "NeueMontreal", sans-serif; <br>
+  font-weight: bold; <br>
+  letter-spacing: 0.03em; <br>
+  color: #003A6B; <br>
+  margin-bottom: 0.6rem; <br>
+} <br>
+ <br>
+#contact-form input, <br>
+#contact-form textarea { <br>
+  width: 100%; <br>
+  border: none; <br>
+  background: transparent; <br>
+  font-family: "Simplon Mono", sans-serif; <br>
+  font-size: 1rem; <br>
+  color: #003A6B; <br>
+  outline: none; <br>
+  box-sizing: border-box; <br>
+} <br>
+ <br>
+/* text inputs */ <br>
+#contact-form input { <br>
+  border-bottom: 2px solid #003A6B; <br>
+  padding: 0.7rem 0; <br>
+  margin-bottom: 1.5rem; <br>
+  transition: border-color 0.3s ease, background-color 0.3s ease; <br>
+} <br>
+ <br>
+/* message box */ <br>
+#contact-form textarea { <br>
+  min-height: 120px; <br>
+  resize: vertical; <br>
+  border: 2px solid #003A6B; <br>
+  border-radius: 10px; <br>
+  padding: 1rem; <br>
+  margin-top: 0.2rem; <br>
+  margin-bottom: 1.5rem; <br>
+  line-height: 1.6; <br>
+  transition: border-color 0.3s ease, background-color 0.3s ease; <br>
+} <br>
+ <br>
+#contact-form input:focus { <br>
+  border-bottom: 2px solid #000000; <br>
+} <br>
+ <br>
+#contact-form textarea:focus { <br>
+  border: 2px solid #000000; <br>
+} <br>
+ <br>
+/* button */ <br>
+#contact-form .btn { <br>
+  font-family: "Simplon Mono", sans-serif; <br>
+  padding: 8px 20px; <br>
+  border: 2px solid #003A6B; <br>
+  background: none; <br>
+  color: #003A6B; <br>
+  border-radius: 6px; <br>
+  cursor: pointer; <br>
+  background-color: #f2f0ef; <br>
+  transition: transform 0.3s ease; <br>
+  width: fit-content; <br>
+} <br>
+ <br>
+#contact-form .btn:hover { <br>
+  transform: scale(1.05); <br>
+} <br>
       </code></pre>
 
       <h2>Products &amp; Services (Listing)</h2>
-      <section id="products">
-        <h3>Our Products!</h3>
-        <!-- Product card -->
-        <div class="product-page">
+      <section class="menu-section">
+        <div class="menu-container">
+          <div class="menu-list">
+            <!-- Item 1 -->
+            <div class="menu-row">
+              <div class="menu-main">
+                <span class="menu-name">Item </span>
 
-          <div class="product-card">
-            <h3>Colombia Coffee</h3>
-            <img src="img/coffee.jpg" alt="Coffee">
-            <p><strong>$8</strong></p>
-            <a href="#">Add to cart</a>
+                <div class="price-block">
+                  <span class="menu-price">$8</span>
+                  <a class="menu-add">add</a>
+                </div>
+              </div>
+
+              <p class="menu-description">
+                Item
+              </p>
+              <img class="menu-img" src="img/columbia.png" alt="a cup of espresso coffee">
+            </div>
+
+            <!-- Item 2 -->
+            <div class="menu-row">
+              <div class="menu-main">
+                <span class="menu-name">Item</span>
+
+                <div class="price-block">
+                  <span class="menu-price">$10</span>
+                  <a class="menu-add">add</a>
+                </div>
+              </div>
+
+              <p class="menu-description">
+                item
+              </p>
+              <img class="menu-img" src="img/columbia.png" alt="a cup of columbia coffee">
+            </div>
+          </section>
+        <section id="cx-signup" class="rewards">
+        <h1>Rewards</h1>
+        <p>Sign up to collect points and receive exclusive offers.</p>
+
+        <form class="rewards-form">
+          <div class="input-row">
+            <div class="input-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname">
+            </div>
+
+            <div class="input-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname">
+            </div>
           </div>
 
-          <div class="product-card">
-            <h3>Colombia Decaf</h3>
-            <img src="img/coffee.jpg" alt="Coffee">
-            <p><strong>$10</strong></p>
-            <a href="#">Add to cart</a>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email">
           </div>
-        </div>
+
+          <button class="btn">Sign Up</button>
+        </form>
       </section>
 
       <h4>HTML:</h4>
       <pre><code>
-      &lt;h2>Products &amp; Services (Listing)&lt;/h2>
-      &lt;section id="products">
-        &lt;h3>Our Products!&lt;/h3>
-        <!-- Product card -->
-        &lt;div class="product-page">
+      &lt;section class="menu-section">
+        &lt;div class="menu-container">
+          &lt;div class="menu-list">
+            &lt;div class="menu-row">
+              &lt;div class="menu-main">
+                &lt;span class="menu-name">Item &lt;/span>
 
-          &lt;div class="product-card">
-            &lt;h3>Colombia Coffee&lt;/h3>
-            &lt;img src="img/coffee.jpg" alt="Coffee">
-            &lt;p>&lt;strong>$8&lt;/strong>&lt;/p>
-            &lt;a href="#">Add to cart&lt;/a>
+                &lt;div class="price-block">
+                  &lt;span class="menu-price">$8&lt;/span>
+                  &lt;a class="menu-add">add&lt;/a>
+                &lt;/div>
+              &lt;/div>
+
+              &lt;p class="menu-description">
+                Item
+              &lt;/p>
+              &lt;img class="menu-img" src="img/columbia.png" alt="a cup of espresso coffee">
+            &lt;/div>
+            &lt;div class="menu-row">
+              &lt;div class="menu-main">
+                &lt;span class="menu-name">Item&lt;/span>
+
+                &lt;div class="price-block">
+                  &lt;span class="menu-price">$10&lt;/span>
+                  &lt;a class="menu-add">add&lt;/a>
+                &lt;/div>
+              &lt;/div>
+
+              &lt;p class="menu-description">
+                item
+              &lt;/p>
+              &lt;img class="menu-img" src="img/columbia.png" alt="a cup of columbia coffee">
+            &lt;/div>
+          &lt;/section>
+        &lt;section id="cx-signup" class="rewards">
+        &lt;h1>Rewards&lt;/h1>
+        &lt;p>Sign up to collect points and receive exclusive offers.&lt;/p>
+
+        &lt;form class="rewards-form">
+          &lt;div class="input-row">
+            &lt;div class="input-group">
+              &lt;label for="fname">First Name&lt;/label>
+              &lt;input type="text" id="fname">
+            &lt;/div>
+
+            &lt;div class="input-group">
+              &lt;label for="lname">Last Name&lt;/label>
+              &lt;input type="text" id="lname">
+            &lt;/div>
           &lt;/div>
 
-          &lt;div class="product-card">
-            &lt;h3>Colombia Decaf&lt;/h3>
-            &lt;img src="img/coffee.jpg" alt="Coffee">
-            &lt;p>&lt;strong>$10&lt;/strong>&lt;/p>
-            &lt;a href="#">Add to cart&lt;/a>
+          &lt;div class="input-group">
+            &lt;label for="email">Email&lt;/label>
+            &lt;input type="email" id="email">
           &lt;/div>
-        &lt;/div>
+
+          &lt;button class="btn">Sign Up&lt;/button>
+        &lt;/form>
       &lt;/section>
       </code></pre>
 
       <h4>CSS:</h4>
       <pre><code>
-        .product-card {
-          width: 240px;
-          padding: 1.5rem;
+.menu-section {
+  margin: 14rem auto;
+  padding: 0 1.5rem;
+}
 
-          border: 2px solid #003A6B;
-          border-radius: 14px;
-          background-color: #fff;
+.menu-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
+/* Title */
+.menu-title {
+  font-family: "NeueMontreal", sans-serif;
+  font-size: 2.2rem;
+  color: #002D68;
+}
 
-        /* Product images */
-        .product-card img {
-          width: 190px;
-          height: 140px;
-          object-fit: cover;
-          border-radius: 8px;
-          margin: 0.75rem 0;
-        }
+.menu-intro {
+  font-family: "Simplon Mono", sans-serif;
+  font-size: 0.9rem;
+  color: #002D68;
+  margin-bottom: 3rem;
+  max-width: 70ch;
+  line-height: 1.7;
+  opacity: 0.85;
+  margin-top: -.5rem;
+}
 
-        /* Product text */
-        .product-card h3 {
-          margin-top: 0;
-          margin-bottom: 0.25rem;
-          text-align: center;
-        }
+/* List */
+.menu-list {
+  display: flex;
+  flex-direction: column;
+}
 
-        .product-card p {
-          margin: 0.25rem 0;
-          text-align: center;
-        }
+/* Row */
+.menu-row {
+  padding: 0.9rem 0;
+  border-bottom: 1px solid #003A6B;
+  cursor: pointer;
+  transition: padding 0.25s ease;
+}
 
-        /* Button */
-        .product-card a {
-          margin-top: auto;
-          display: inline-block;
+.menu-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1.5rem;
+}
 
-          padding: 0.6rem 1.4rem;
-          border: 2px solid #003A6B;
-          background-color: #fff;
+.menu-name,
+.menu-price {
+  font-family: "Simplon Mono", sans-serif;
+  font-size: 1rem;
+  color: #002D68;
+  transition: color 0.2s ease;
+}
 
-          color: #003A6B;
-          font-family: 'NeueMontreal', sans-serif;
-          font-weight: 600;
-          text-decoration: none;
+.price-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.15rem;
+}
 
-          border-radius: 999px;
-          cursor: pointer;
+.menu-add {
+  font-family: "Simplon Mono", sans-serif;
+  font-size: .8rem;
+  text-decoration: none;
+  color: #002D68;
+  opacity: 0.7;
+  transition: color 0.2s ease, opacity 0.2s ease, text-decoration 0.2s ease;
+}
 
-          transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
-        }
+.menu-add:hover {
+  color: #000000;
+  text-decoration: underline;
+  opacity: 1;
+}
 
-        .product-card a:hover,
-        .product-card a:focus {
-          background-color: #003A6B;
-          color: #fff;
-          transform: scale(1.05);
-        }
+.menu-description {
+  font-family: "Simplon Mono", sans-serif;
+  font-size: 0.8rem;
+  color: #002D68;
+  margin: 0;
+  line-height: 1.5;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition:
+    max-height 0.25s ease,
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* Image */
+.menu-img {
+  display: block;
+  width: 5rem;
+  height: auto;
+  margin-top: 0;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+/* Hover expand */
+.menu-row:hover {
+  padding-bottom: 1.5rem;
+}
+
+.menu-row:hover .menu-description {
+  max-height: 55px;
+  opacity: 1;
+  transform: translateY(4px);
+}
+
+.menu-row:hover .menu-img {
+  max-height: 160px;
+  opacity: 1;
+  transform: translateY(0);
+  margin-top: 0.75rem;
+}
+
+.menu-row:hover .menu-name,
+.menu-row:hover .menu-price {
+  color: #000000;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .menu-title {
+    font-size: 1.8rem;
+  }
+
+  .menu-name,
+  .menu-price {
+    font-size: 0.9rem;
+  }
+
+  .menu-description {
+    font-size: 0.75rem;
+  }
+
+  .menu-img {
+    width: 100px;
+  }
+}
+.rewards {
+  max-width: 700px;
+  margin: 14rem auto;
+  padding: 0 2rem;
+  color: #003A6B;
+}
+
+.rewards h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.rewards p {
+  margin-bottom: 2.5rem;
+}
+
+.rewards .btn {
+  margin-top: 2.5rem;
+}
       </code></pre>
 
       <h2>Detailed Product</h2>
@@ -1008,74 +1267,206 @@ input[type="radio"]:checked + span:before{ <br>
       </code></pre>
 
       <h2>Feedback</h2>
-      <section id="feedback">
+      <section id="feedback" class="rewards">
+        <h1>Rate Us!</h1>
+        <p>Please leave a review down below</p>
 
-        <form id="feedback-form">
-          <h3>Please Rate Us!</h3>
-          <label for="rating">Rating</label>
-          <select id="rating" name="rating">
-            <option value="5">5 — Excellent</option>
-            <option value="4">4 — Good</option>
-            <option value="3">3 — Okay</option>
-            <option value="2">2 — Poor</option>
-            <option value="1">1 — Very Poor</option>
-          </select>
+        <form class="rewards-form">
+          <div class="input-row">
+            <div class="input-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" placeholder="Enter your first name">
+            </div>
 
-          <label for="feedback-comments">Comments</label>
-          <textarea id="feedback-comments" name="comments"></textarea>
+            <div class="input-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" placeholder="Enter your last name">
+            </div>
+          </div>
 
-          <button class="btn" type="submit">Submit Feedback</button>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+          </div>
+
+          <div class="input-group">
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating">
+              <option value="" disabled selected>Select a rating</option>
+              <option value="5">5 — Excellent</option>
+              <option value="4">4 — Good</option>
+              <option value="3">3 — Okay</option>
+              <option value="2">2 — Poor</option>
+              <option value="1">1 — Very Poor</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label for="feedback-comments">Comments</label>
+            <textarea id="feedback-comments" name="comments" placeholder="Tell us about your experience"></textarea>
+          </div>
+
+          <button class="btn" type="submit">Submit</button>
         </form>
       </section>
-    </section>
 
     <h4>HTML:</h4>
     <pre><code>
-    &lt;section id="feedback">
+      &lt;section id="feedback" class="rewards">
+        &lt;hr>
+        &lt;h1>Rate Us!&lt;/h1>
+        &lt;p>Please leave a review down below&lt;/p>
 
-        &lt;form id="feedback-form">
-          &lt;h3>Please Rate Us!&lt;/h3>
-          &lt;label for="rating">Rating&lt;/label>
-          &lt;select id="rating" name="rating">
-            &lt;option value="5">5 — Excellent&lt;/option>
-            &lt;option value="4">4 — Good&lt;/option>
-            &lt;option value="3">3 — Okay&lt;/option>
-            &lt;option value="2">2 — Poor&lt;/option>
-            &lt;option value="1">1 — Very Poor&lt;/option>
-          &lt;/select>
+        &lt;form class="rewards-form">
+          &lt;div class="input-row">
+            &lt;div class="input-group">
+              &lt;label for="fname">First Name&lt;/label>
+              &lt;input type="text" id="fname" placeholder="Enter your first name">
+            &lt;/div>
 
-          &lt;label for="feedback-comments">Comments&lt;/label>
-          &lt;textarea id="feedback-comments" name="comments">&lt;/textarea>
+            &lt;div class="input-group">
+              &lt;label for="lname">Last Name&lt;/label>
+              &lt;input type="text" id="lname" placeholder="Enter your last name">
+            &lt;/div>
+          &lt;/div>
 
-          &lt;button class="btn" type="submit">Submit Feedback&lt;/button>
+          &lt;div class="input-group">
+            &lt;label for="email">Email&lt;/label>
+            &lt;input type="email" id="email" placeholder="Enter your email">
+          &lt;/div>
+
+          &lt;div class="input-group">
+            &lt;label for="rating">Rating&lt;/label>
+            &lt;select id="rating" name="rating">
+              &lt;option value="" disabled selected>Select a rating&lt;/option>
+              &lt;option value="5">5 — Excellent&lt;/option>
+              &lt;option value="4">4 — Good&lt;/option>
+              &lt;option value="3">3 — Okay&lt;/option>
+              &lt;option value="2">2 — Poor&lt;/option>
+              &lt;option value="1">1 — Very Poor&lt;/option>
+            &lt;/select>
+          &lt;/div>
+
+          &lt;div class="input-group">
+            &lt;label for="feedback-comments">Comments&lt;/label>
+            &lt;textarea id="feedback-comments" name="comments" placeholder="Tell us about your experience">&lt;/textarea>
+          &lt;/div>
+
+          &lt;button class="btn" type="submit">Submit&lt;/button>
         &lt;/form>
       &lt;/section>
-    &lt;/section>
     </code></pre>
 
     <h4>CSS:</h4>
     <pre><code>
-    input[type="text"],
-    input[type="email"],
-    select,
-    textarea {
-      width: 100%;
-      font-family: 'Simplon Mono', sans-serif;
-      color: #003A6B;
-      border: 2px solid #003A6B;
-      background: transparent;
-      border-radius: 6px;
-      margin-bottom: 1.5rem;
-    }
+#feedback.rewards {
+  max-width: 700px;
+  margin: 14rem auto;
+  padding: 0 2rem;
+  color: #003A6B;
+}
 
-    /* inputs + select */
-    input[type="text"],
-    input[type="email"],
-    select {
-      background-color: #fff;
-      height: 44px;
-      padding: 0.6rem 0.75rem;
-    }
+#feedback.rewards h1 {
+  font-size: 2.5rem;
+  margin: 0 0 0.75rem 0;
+  font-family: "NeueMontreal", sans-serif;
+  color: #003A6B;
+}
+
+#feedback.rewards p {
+  margin: 0 0 2.5rem 0;
+  font-family: "Simplon Mono", sans-serif;
+  color: #003A6B;
+  line-height: 1.8;
+}
+
+#feedback .rewards-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#feedback .input-row {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+#feedback .input-group {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+#feedback .input-group label {
+  font-family: "NeueMontreal", sans-serif;
+  font-weight: bold;
+  margin: 0 0 0.6rem 0;
+  letter-spacing: 0.03em;
+  color: #003A6B;
+}
+
+#feedback .input-group input,
+#feedback .input-group select,
+#feedback .input-group textarea {
+  width: 100%;
+  margin: 0;
+  border: none;
+  border-bottom: 2px solid #003A6B;
+  background: transparent;
+  padding: 0.7rem 0;
+  font-family: "Simplon Mono", sans-serif;
+  font-size: 1rem;
+  color: #003A6B;
+  outline: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+#feedback .input-group select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  padding-right: 2rem;
+  background-image: linear-gradient(45deg, transparent 50%, #003A6B 50%),
+                    linear-gradient(135deg, #003A6B 50%, transparent 50%);
+  background-position: calc(100% - 14px) calc(50% - 3px),
+                       calc(100% - 8px) calc(50% - 3px);
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+}
+
+#feedback .input-group textarea {
+  min-height: 120px;
+  resize: vertical;
+  border: 2px solid #003A6B;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 0.2rem;
+  line-height: 1.6;
+}
+
+#feedback .input-group input:focus,
+#feedback .input-group select:focus {
+  border-bottom: 2px solid #000000;
+}
+
+#feedback .input-group textarea:focus {
+  border: 2px solid #000000;
+}
+
+#feedback .input-group input::placeholder,
+#feedback .input-group textarea::placeholder {
+  color: rgba(0, 58, 107, 0.6);
+}
+
+#feedback .btn {
+  margin-top: 2.5rem;
+  padding: 8px 20px;
+  width: fit-content;
+}
     </code></pre>
 
     <section id="Brand-Components">
@@ -1093,6 +1484,21 @@ input[type="radio"]:checked + span:before{ <br>
           &lt;li class="montreal-font"&gt;NEUE MONTREAL&lt;/li&gt; <br />
           &lt;li class="simplon-font"&gt;SIMPLON MONO&lt;/li&gt; <br />
           &lt;/ul&gt;
+        </code>
+
+        <h4>CSS:</h4>
+        <code>
+  .montreal-font { <br>
+  font-family: "NeueMontreal", sans-serif;<br>
+  font-size: 1.5rem;<br>
+  letter-spacing: 0.05em;<br>
+  }<br>
+<br>
+.simplon-font {<br>
+  font-family: 'Simplon Mono', sans-serif;<br>
+  font-size: 1.3rem;<br>
+  letter-spacing: 0.05em;<br>
+}
         </code>
       </section>
 
@@ -1187,8 +1593,32 @@ input[type="radio"]:checked + span:before{ <br>
           </a>
         </li>
          <li>
+          Minimalist Coffee Image [Website]. Retrieved March 4, 2026, from 
+          <a href="https://ca.pinterest.com/pin/326581410505239382/">https://ca.pinterest.com/pin/326581410505239382/</a>
+        </li>
+        <li>
+          Baguette and Coffee Image [Website]. Retrieved March 4, 2026, from 
+          <a href="https://ca.pinterest.com/pin/180777372538966636/">https://ca.pinterest.com/pin/180777372538966636/</a>
+        </li>
+        <li>
           Mocha Cafe and Bar. (n.d.). *Mocha Cafe and Bar* [Website]. Retrieved February 2, 2026, from 
           <a href="https://mocha-cafe-and-bar.webflow.io/">https://mocha-cafe-and-bar.webflow.io/</a>
+        </li>
+        <li>
+          Coffee Background [Website]. Retrieved March 5, 2026, from 
+          <a href="https://ca.pinterest.com/pin/563018699443881/">https://ca.pinterest.com/pin/563018699443881/</a>
+        </li>
+        <li>
+          Coffee Pot [Website]. Retrieved March 5, 2026, from 
+          <a href="https://ca.pinterest.com/pin/49258189670205802/">https://ca.pinterest.com/pin/49258189670205802/</a>
+        </li>
+        <li>
+          Cafe table [Website]. Retrieved March 5, 2026, from 
+          <a href="https://ca.pinterest.com/pin/3729612242024668/">https://ca.pinterest.com/pin/3729612242024668/</a>
+        </li>
+        <li>
+          Baguettes [Website]. Retrieved March 5, 2026, from 
+          <a href="https://ca.pinterest.com/pin/2533343537745657/">https://ca.pinterest.com/pin/2533343537745657/</a>
         </li>
       </ul>
     </section>
