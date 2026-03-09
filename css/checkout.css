@@ -156,6 +156,7 @@ h1, h2 {
 /* Payment Form Styling */
 
 .payment-form label {
+  margin-top: 0.5rem;
   font-family: "NeueMontreal", sans-serif;
   display: block;
   margin-bottom: 0.5rem;
