@@ -177,6 +177,10 @@ h1, h2, h3 {
   background: #f2f0ef;
 }
 
+.paymentform-line {
+  margin-bottom: 1rem;
+}
+
 /* Button */
 
 .btn {
