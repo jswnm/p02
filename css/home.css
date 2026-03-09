@@ -105,14 +105,14 @@ h1, h2 {
 .hero-text {
   position: absolute;
   top: 25%;
-  left: 10%;                 /* controls how far from left edge */
-  transform: translateY(-50%); /* keep it vertically centered */
+  left: 10%;                
+  transform: translateY(-50%); 
   z-index: 2;
 
   display: flex;
   flex-direction: column;
-  align-items: flex-start;    /* align text to left */
-  text-align: left;           /* left text alignment */
+  align-items: flex-start;   
+  text-align: left;           
 }
 
 .hero-text h1 {
