@@ -258,3 +258,46 @@ footer {
   color: #002D68;
   text-decoration: underline;
 }
+
+.btn {
+  display: inline-block;
+  font-family: 'Simplon Mono', sans-serif;
+  padding: 5px 20px;
+  border: 2px solid #002D68;
+  background: none;
+  color: #002D68;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  background-color: #f2f0ef;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.purchase-btn {
+  display: block;
+  width: fit-content;
+  margin-right: auto;
+  margin-top: 2rem;
+}
+
+.add-block {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.menu-qty {
+  width: 45px;
+  font-family: "Simplon Mono", sans-serif;
+  font-size: 0.75rem;
+  color: #002D68;
+  border: 1px solid #002D68;
+  border-radius: 3px;
+  background: transparent;
+  text-align: center;
+  padding: 2px 4px;
+}

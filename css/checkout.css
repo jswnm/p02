@@ -37,7 +37,7 @@ p {
   line-height: 1.8;
 }
 
-h1, h2 {
+h1, h2, h3 {
   color: #002D68;
 }
 
@@ -156,7 +156,7 @@ h1, h2 {
 /* Payment Form Styling */
 
 .payment-form label {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   font-family: "NeueMontreal", sans-serif;
   display: block;
   margin-bottom: 0.5rem;
